@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy – Global Academy of Education Research</title>
+    <meta name="description" content="Cookie Policy for Global Academy of Education Research. Learn about the cookies we use, how we use them, and how to manage your preferences." />
+    <meta name="keywords" content="cookie policy, cookies, GDPR, privacy, Global Academy of Education Research" />
+    <meta name="author" content="Global Academy of Education Research Private Limited" />
+    <link rel="canonical" href="https://globalacademyeduresearch.com/cookie.html" />
+    <meta property="og:title" content="Cookie Policy – Global Academy of Education Research" />
+    <meta property="og:description" content="Learn about the cookies we use and how to manage your preferences." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== COLOR VARIABLES ===== */
+        :root {
+            --primary: #0f2a47;
+            --primary-light: #1a3d66;
+            --gold: #f4a236;
+            --gold-dark: #d4892b;
+            --mint: #20b2aa;
+            --gray-bg: #f4f7fb;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--primary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo h1 span {
+            color: var(--gold);
+        }
+        .logo .tagline {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: #b0c4de;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .nav-desktop ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-desktop a {
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-desktop a:hover {
+            color: var(--gold);
+        }
+        .nav-desktop .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-desktop .lang-btn:hover {
+            background: var(--gold);
+            color: var(--primary);
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+        .hamburger.open {
+            transform: rotate(90deg);
+        }
+        .mobile-lang {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            .logo .tagline {
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Mobile Slide Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            top: 72px;
+            height: calc(100vh - 72px);
+        }
+        .mobile-menu a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 60px;
+                height: calc(100vh - 60px);
+            }
+        }
+
+        /* ===== PAGE HERO (Inner) ===== */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3d66 60%, #2b4d7a 100%);
+            color: #fff;
+            padding: 3.5rem 0;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .page-hero h1 span {
+            color: var(--gold);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 2.5rem 0;
+            }
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== LEGAL CONTENT ===== */
+        .legal-content {
+            padding: 4rem 0;
+        }
+        .legal-content h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 0.3rem;
+        }
+        .legal-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .legal-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .legal-content p,
+        .legal-content li {
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+        }
+        .legal-content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .legal-content ul li {
+            margin-bottom: 0.4rem;
+        }
+        .legal-content strong {
+            color: var(--text-dark);
+        }
+        .legal-content .last-updated {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.2rem;
+            background: var(--gray-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+        .legal-content .section-divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 2.5rem 0;
+        }
+        .legal-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        .legal-content table th,
+        .legal-content table td {
+            border: 1px solid #e2e8f0;
+            padding: 0.6rem 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .legal-content table th {
+            background: var(--gray-bg);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .legal-content table td {
+            color: var(--text-light);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: #b0c4de;
+            padding: 2.5rem 0 1.5rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.95rem;
+            color: #b0c4de;
+            line-height: 1.8;
+        }
+        .footer-grid a:hover {
+            color: var(--gold);
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid ul li {
+            padding: 0.2rem 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a9db0;
+        }
+        .footer-bottom a {
+            color: var(--gold);
+            margin: 0 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cookie-inner p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex: 1;
+            color: #e2e8f0;
+        }
+        .cookie-inner a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-inner .btn-cookie {
+            background: var(--gold);
+            border: none;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .cookie-inner .btn-cookie:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 600px) {
+            .cookie-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <!-- Desktop Nav -->
+            <div class="logo">
+                <h1>Global Academy <span>of Education Research</span></h1>
+                <div class="tagline">Mathematics Education · Research · Training · Consultancy</div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="lang-btn" id="langToggleDesktop">ने</button></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo">
+                    <h1>Global Academy <span>of Ed. Research</span></h1>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <button class="mobile-lang" id="langToggleMobile">ने</button>
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container" id="heroEn">
+            <h1>Cookie <span>Policy</span></h1>
+            <p>Learn about the cookies we use, how we use them, and how you can manage your preferences.</p>
+        </div>
+        <div class="container" id="heroNp" style="display:none;">
+            <h1><span>कुकी</span> नीति</h1>
+            <p>हामीले प्रयोग गर्ने कुकीहरू, तिनीहरूको प्रयोग, र तपाईं कसरी आफ्नो प्राथमिकताहरू व्यवस्थापन गर्न सक्नुहुन्छ भनेर जान्नुहोस्।</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="legal-content">
+        <div class="container">
+
+            <div id="cookieEn">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> 18 June 2026
+                </div>
+
+                <h2>1. What Are Cookies?</h2>
+                <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently, enhance user experience, and provide information to the website owners.</p>
+                <p>Cookies are not viruses, spyware, or malware. They do not contain personal information such as your name, address, or payment details unless you have provided that information directly.</p>
+
+                <h2>2. How We Use Cookies</h2>
+                <p>At <strong>Global Academy of Education Research Private Limited</strong>, we use cookies for the following purposes:</p>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> These are necessary for the basic functioning of our website. They enable you to navigate the site and use core features.</li>
+                    <li><strong>Preference Cookies:</strong> These remember your preferences, such as your language selection (English or Nepali), so you don't have to set them again on each visit.</li>
+                    <li><strong>Analytics Cookies:</strong> These help us understand how visitors interact with our website by collecting anonymous information about pages visited, time spent, and referral sources. This helps us improve the user experience.</li>
+                    <li><strong>Performance Cookies:</strong> These collect information about how you use our website, such as which pages you visit most often, to optimize site performance.</li>
+                </ul>
+
+                <h2>3. Types of Cookies We Use</h2>
+                <p>The table below explains the types of cookies we use and their specific purposes:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cookie Type</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Essential</strong></td>
+                            <td>Necessary for basic site functionality, navigation, and security.</td>
+                            <td>Session (expires when you close your browser)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preference (Language)</strong></td>
+                            <td>Remembers your preferred language (English or Nepali) so you don't need to select it on every visit.</td>
+                            <td>Permanent (1 year)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Analytics (Google Analytics)</strong></td>
+                            <td>Collects anonymous usage data to help us improve our website and understand user behavior.</td>
+                            <td>Permanent (2 years)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cookie Consent</strong></td>
+                            <td>Remembers that you have accepted the cookie consent banner so it doesn't reappear on every visit.</td>
+                            <td>Permanent (1 year)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>We do not use marketing or advertising cookies, nor do we share your data with third-party advertisers.</p>
+
+                <h2>4. How to Manage Cookies</h2>
+                <p>You can control and manage cookies in several ways:</p>
+                <ul>
+                    <li><strong>Browser Settings:</strong> Most web browsers allow you to accept, reject, or delete cookies. You can configure your browser to block all cookies or to alert you when cookies are being sent. However, please note that disabling essential cookies may affect the functionality of our website.</li>
+                    <li><strong>Cookie Banner:</strong> When you first visit our website, you will see a cookie consent banner. You can accept or reject non-essential cookies by adjusting your browser settings.</li>
+                    <li><strong>Opt-Out Tools:</strong> You can opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--gold-dark); font-weight:500;">Google Analytics Opt-Out Browser Add-on</a>.</li>
+                </ul>
+                <p>For more detailed instructions on managing cookies, please refer to the help section of your browser or visit <a href="https://www.aboutcookies.org" target="_blank" rel="noopener" style="color:var(--gold-dark); font-weight:500;">www.aboutcookies.org</a>.</p>
+
+                <h2>5. Third-Party Cookies</h2>
+                <p>Our website may contain links to third-party websites. We do not control the cookie settings of these external sites. We recommend reviewing the cookie policies of any third-party websites you visit.</p>
+
+                <h2>6. Changes to This Cookie Policy</h2>
+                <p>We may update this Cookie Policy from time to time to reflect changes in technology, legal requirements, or our practices. Any updates will be posted on this page with a revised "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions, concerns, or requests regarding our use of cookies, please contact us:</p>
+                <p style="margin-top:0.2rem;">
+                    <strong>Global Academy of Education Research Private Limited</strong><br />
+                    Pokhara-30, Dhungepatan, Kaski, Nepal<br />
+                    <strong>Email:</strong> <a href="mailto:kharikaparajuli@gmail.com" style="color:var(--gold-dark);">kharikaparajuli@gmail.com</a><br />
+                    <strong>Phone:</strong> <a href="tel:+9779846650159" style="color:var(--gold-dark);">+977-9846650159</a>
+                </p>
+
+                <div class="section-divider"></div>
+                <p style="font-size:0.9rem; color:var(--text-light); text-align:center;">
+                    © 2026 Global Academy of Education Research Private Limited. All Rights Reserved.
+                </p>
+            </div>
+
+            <!-- ===== NEPALI VERSION ===== -->
+            <div id="cookieNp" style="display:none;">
+                <div class="last-updated">
+                    <strong>अन्तिम मिति:</strong> १८ जुन २०२६
+                </div>
+
+                <h2>१. कुकीहरू के हुन्?</h2>
+                <p>कुकीहरू साना पाठ फाइलहरू हुन् जुन तपाईंले कुनै वेबसाइट भ्रमण गर्दा तपाईंको कम्प्युटर, स्मार्टफोन, वा अन्य यन्त्रमा राखिन्छन्। तिनीहरू वेबसाइटहरूलाई अझ प्रभावकारी रूपमा काम गर्न, प्रयोगकर्ता अनुभव बढाउन, र वेबसाइट मालिकहरूलाई जानकारी प्रदान गर्न व्यापक रूपमा प्रयोग गरिन्छ।</p>
+                <p>कुकीहरू भाइरस, स्पाइवेयर, वा मालवेयर होइनन्। तिनीहरूमा तपाईंको नाम, ठेगाना, वा भुक्तानी विवरणहरू जस्ता व्यक्तिगत जानकारी हुँदैन जबसम्म तपाईंले त्यो जानकारी प्रत्यक्ष रूपमा प्रदान गर्नुभएको छैन।</p>
+
+                <h2>२. हामी कसरी कुकीहरू प्रयोग गर्दछौं</h2>
+                <p><strong>ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड</strong> मा, हामी निम्न उद्देश्यका लागि कुकीहरू प्रयोग गर्दछौं:</p>
+                <ul>
+                    <li><strong>आवश्यक कुकीहरू:</strong> यी हाम्रो वेबसाइटको आधारभूत कार्यक्षमताको लागि आवश्यक छन्। तिनीहरूले तपाईंलाई साइटमा नेभिगेट गर्न र मुख्य सुविधाहरू प्रयोग गर्न सक्षम बनाउँछन्।</li>
+                    <li><strong>प्राथमिकता कुकीहरू:</strong> यी तपाईंको प्राथमिकताहरू, जस्तै तपाईंको भाषा चयन (अंग्रेजी वा नेपाली) सम्झन्छन्, ताकि तपाईंले प्रत्येक भ्रमणमा तिनीहरू फेरि सेट गर्नु पर्दैन।</li>
+                    <li><strong>विश्लेषण कुकीहरू:</strong> यी भ्रमण गरिएका पृष्ठहरू, बिताएको समय, र सन्दर्भ स्रोतहरूको बारेमा अज्ञात जानकारी सङ्कलन गरेर आगन्तुकहरूले हाम्रो वेबसाइटसँग कसरी अन्तरक्रिया गर्छन् भनेर बुझ्न मद्दत गर्दछन्। यसले हामीलाई प्रयोगकर्ता अनुभव सुधार गर्न मद्दत गर्दछ।</li>
+                    <li><strong>प्रदर्शन कुकीहरू:</strong> यी तपाईंले हाम्रो वेबसाइट कसरी प्रयोग गर्नुहुन्छ भन्ने जानकारी सङ्कलन गर्दछन्, जस्तै तपाईंले कुन पृष्ठहरू धेरै पटक भ्रमण गर्नुहुन्छ, साइटको प्रदर्शन अनुकूलन गर्न।</li>
+                </ul>
+
+                <h2>३. हामीले प्रयोग गर्ने कुकीहरूका प्रकारहरू</h2>
+                <p>तलको तालिकाले हामीले प्रयोग गर्ने कुकीहरूका प्रकार र तिनीहरूका विशिष्ट उद्देश्यहरू व्याख्या गर्दछ:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>कुकी प्रकार</th>
+                            <th>उद्देश्य</th>
+                            <th>अवधि</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>आवश्यक</strong></td>
+                            <td>आधारभूत साइट कार्यक्षमता, नेभिगेसन, र सुरक्षाको लागि आवश्यक।</td>
+                            <td>सत्र (ब्राउजर बन्द गरेपछि समाप्त हुन्छ)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>प्राथमिकता (भाषा)</strong></td>
+                            <td>तपाईंको रुचाइएको भाषा (अंग्रेजी वा नेपाली) सम्झन्छ, ताकि तपाईंले प्रत्येक भ्रमणमा यसलाई चयन गर्नु पर्दैन।</td>
+                            <td>स्थायी (१ वर्ष)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>विश्लेषण (Google Analytics)</strong></td>
+                            <td>हामीलाई हाम्रो वेबसाइट सुधार गर्न र प्रयोगकर्ता व्यवहार बुझ्न मद्दत गर्न अज्ञात प्रयोग डाटा सङ्कलन गर्दछ।</td>
+                            <td>स्थायी (२ वर्ष)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>कुकी सहमति</strong></td>
+                            <td>तपाईंले कुकी सहमति ब्यानर स्वीकार गर्नुभएको सम्झन्छ ताकि यो प्रत्येक भ्रमणमा पुन: देखा नपरोस्।</td>
+                            <td>स्थायी (१ वर्ष)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>हामी मार्केटिङ वा विज्ञापन कुकीहरू प्रयोग गर्दैनौं, न त हामी तपाईंको डाटा तेस्रो-पक्ष विज्ञापनदाताहरूसँग साझेदारी गर्दछौं।</p>
+
+                <h2>४. कुकीहरू कसरी व्यवस्थापन गर्ने</h2>
+                <p>तपाईं धेरै तरिकामा कुकीहरू नियन्त्रण र व्यवस्थापन गर्न सक्नुहुन्छ:</p>
+                <ul>
+                    <li><strong>ब्राउजर सेटिङहरू:</strong> धेरैजसो वेब ब्राउजरहरूले तपाईंलाई कुकीहरू स्वीकार, अस्वीकार, वा मेटाउन अनुमति दिन्छन्। तपाईंले सबै कुकीहरू ब्लक गर्न वा कुकीहरू पठाउँदा तपाईंलाई सचेत गराउन आफ्नो ब्राउजर कन्फिगर गर्न सक्नुहुन्छ। तथापि, कृपया ध्यान दिनुहोस् कि आवश्यक कुकीहरू असक्षम गर्दा हाम्रो वेबसाइटको कार्यक्षमतालाई असर गर्न सक्छ।</li>
+                    <li><strong>कुकी ब्यानर:</strong> जब तपाईं पहिलो पटक हाम्रो वेबसाइट भ्रमण गर्नुहुन्छ, तपाईंले कुकी सहमति ब्यानर देख्नुहुनेछ। तपाईं आफ्नो ब्राउजर सेटिङहरू समायोजन गरेर गैर-आवश्यक कुकीहरू स्वीकार वा अस्वीकार गर्न सक्नुहुन्छ।</li>
+                    <li><strong>अप्ट-आउट उपकरणहरू:</strong> तपाईं <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--gold-dark); font-weight:500;">Google Analytics Opt-Out Browser Add-on</a> स्थापना गरेर Google Analytics ट्र्याकिङ अप्ट-आउट गर्न सक्नुहुन्छ।</li>
+                </ul>
+                <p>कुकीहरू व्यवस्थापन गर्ने बारे थप विस्तृत निर्देशनहरूको लागि, कृपया आफ्नो ब्राउजरको सहायता खण्ड हेर्नुहोस् वा <a href="https://www.aboutcookies.org" target="_blank" rel="noopener" style="color:var(--gold-dark); font-weight:500;">www.aboutcookies.org</a> भ्रमण गर्नुहोस्।</p>
+
+                <h2>५. तृतीय-पक्ष कुकीहरू</h2>
+                <p>हाम्रो वेबसाइटमा तृतीय-पक्ष वेबसाइटहरूको लिङ्कहरू हुन सक्छन्। हामी यी बाह्य साइटहरूको कुकी सेटिङहरू नियन्त्रण गर्दैनौं। हामी तपाईंले भ्रमण गर्नुभएको कुनै पनि तृतीय-पक्ष वेबसाइटहरूको कुकी नीतिहरू समीक्षा गर्न सिफारिस गर्दछौं।</p>
+
+                <h2>६. यस कुकी नीतिमा परिवर्तनहरू</h2>
+                <p>हामी प्रविधि, कानूनी आवश्यकताहरू, वा हाम्रो अभ्यासहरूमा परिवर्तनहरू प्रतिबिम्बित गर्न समय-समयमा यस कुकी नीति अद्यावधिक गर्न सक्छौं। कुनै पनि अद्यावधिकहरू संशोधित "अन्तिम मिति" सहित यस पृष्ठमा पोस्ट गरिनेछ। हामी तपाईंलाई यो नीति नियमित रूपमा समीक्षा गर्न प्रोत्साहित गर्दछौं।</p>
+
+                <h2>७. हामीलाई सम्पर्क गर्नुहोस्</h2>
+                <p>यदि तपाईंसँग हाम्रो कुकीहरूको प्रयोगको बारेमा कुनै प्रश्न, चिन्ता, वा अनुरोधहरू छन् भने, कृपया हामीलाई सम्पर्क गर्नुहोस्:</p>
+                <p style="margin-top:0.2rem;">
+                    <strong>ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड</strong><br />
+                    पोखरा-३०, ढुङ्गेपाटन, कास्की, नेपाल<br />
+                    <strong>इमेल:</strong> <a href="mailto:kharikaparajuli@gmail.com" style="color:var(--gold-dark);">kharikaparajuli@gmail.com</a><br />
+                    <strong>फोन:</strong> <a href="tel:+9779846650159" style="color:var(--gold-dark);">+977-9846650159</a>
+                </p>
+
+                <div class="section-divider"></div>
+                <p style="font-size:0.9rem; color:var(--text-light); text-align:center;">
+                    © २०२६ ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड। सबै अधिकार सुरक्षित।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Global Academy of Education Research</h4>
+                    <p>Advancing mathematics education through research, innovation, and culturally responsive pedagogy. Founded by Dr. Kharika Devi Parajuli.</p>
+                    <p style="margin-top:0.6rem;"><strong>📍</strong> Pokhara-30, Dhungepatan, Kaski, Nepal</p>
+                    <p><strong>📧</strong> kharikaparajuli@gmail.com</p>
+                    <p><strong>📞</strong> +977-9846650159</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Global Academy of Education Research Private Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <p>We use cookies to remember your language preference and improve your experience. By continuing, you consent to our <a href="cookie.html">Cookie Policy</a>.</p>
+            <button class="btn-cookie" id="acceptCookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ----- LANGUAGE TOGGLE -----
+        let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+
+            document.querySelectorAll('[id$="En"]').forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+            document.querySelectorAll('[id$="Np"]').forEach(el => el.style.display = (lang === 'ne') ? '' : 'none');
+
+            document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+                btn.textContent = (lang === 'en') ? 'ने' : 'E';
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        function toggleLang() {
+            setLanguage(currentLang === 'en' ? 'ne' : 'en');
+        }
+
+        setLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+            btn.addEventListener('click', toggleLang);
+        });
+
+        // ----- MOBILE MENU -----
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            hamburger.classList.toggle('open', menuOpen);
+            hamburger.textContent = menuOpen ? '✕' : '☰';
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.textContent = '☰';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ----- COOKIE CONSENT -----
+        (function() {
+            const consent = localStorage.getItem('cookieConsent');
+            const banner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookie');
+
+            if (!consent) {
+                setTimeout(() => banner.classList.add('show'), 400);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.classList.remove('show');
+            });
+        })();
+    </script>
+
+</body>
+</html>
