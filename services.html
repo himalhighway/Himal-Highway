@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services – Global Academy of Education Research</title>
+    <meta name="description" content="Global Academy of Education Research offers research, teacher training, conferences, and consultancy in mathematics education, ethnomathematics, and culturally responsive pedagogy." />
+    <meta name="keywords" content="mathematics education research, teacher training Nepal, ethnomathematics, ethnomodelling, educational consultancy, curriculum development, STEM education, GeoGebra" />
+    <meta name="author" content="Global Academy of Education Research Private Limited" />
+    <link rel="canonical" href="https://globalacademyeduresearch.com/services.html" />
+    <meta property="og:title" content="Our Services – Global Academy of Education Research" />
+    <meta property="og:description" content="Research, teacher training, conferences, and consultancy in mathematics education." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== COLOR VARIABLES ===== */
+        :root {
+            --primary: #0f2a47;
+            --primary-light: #1a3d66;
+            --gold: #f4a236;
+            --gold-dark: #d4892b;
+            --mint: #20b2aa;
+            --gray-bg: #f4f7fb;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.75rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--gold);
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            border-color: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(244, 162, 54, 0.35);
+        }
+        .btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: var(--primary);
+            padding: 0.75rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--primary);
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--primary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo h1 span {
+            color: var(--gold);
+        }
+        .logo .tagline {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: #b0c4de;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .nav-desktop ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-desktop a {
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-desktop a:hover,
+        .nav-desktop a.active {
+            color: var(--gold);
+        }
+        .nav-desktop .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-desktop .lang-btn:hover {
+            background: var(--gold);
+            color: var(--primary);
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+        .hamburger.open {
+            transform: rotate(90deg);
+        }
+        .mobile-lang {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            .logo .tagline {
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Mobile Slide Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            top: 72px;
+            height: calc(100vh - 72px);
+        }
+        .mobile-menu a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 60px;
+                height: calc(100vh - 60px);
+            }
+        }
+
+        /* ===== PAGE HERO (Inner) ===== */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3d66 60%, #2b4d7a 100%);
+            color: #fff;
+            padding: 3.5rem 0;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .page-hero h1 span {
+            color: var(--gold);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 2.5rem 0;
+            }
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .section-title p {
+            color: var(--text-light);
+            max-width: 660px;
+            margin: 0 auto;
+        }
+        .section-title .accent-line {
+            width: 60px;
+            height: 4px;
+            background: var(--gold);
+            margin: 0.6rem auto 0 auto;
+            border-radius: 4px;
+        }
+
+        /* ===== SERVICES OVERVIEW ===== */
+        .services-overview {
+            padding: 4rem 0;
+        }
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3.5rem;
+            padding-bottom: 3.5rem;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .service-detail:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .service-detail .icon-big {
+            font-size: 3.5rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .service-detail h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.6rem;
+        }
+        .service-detail h3 span {
+            color: var(--gold);
+        }
+        .service-detail p {
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+        }
+        .service-detail ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.8rem;
+        }
+        .service-detail ul li {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #f0f4f8;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+        .service-detail ul li:last-child {
+            border-bottom: none;
+        }
+        .service-detail ul li::before {
+            content: '✓ ';
+            color: var(--mint);
+            font-weight: 700;
+        }
+        .service-image {
+            background: var(--gray-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed var(--gold);
+        }
+        .service-image .emoji-big {
+            font-size: 4.5rem;
+        }
+        .service-image p {
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        @media (max-width: 992px) {
+            .service-detail {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .service-image {
+                min-height: 120px;
+            }
+        }
+
+        /* ===== PROCESS SECTION ===== */
+        .process-section {
+            background: var(--gray-bg);
+            padding: 4rem 0;
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .process-step {
+            background: #fff;
+            padding: 1.8rem 1.2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            transition: transform 0.25s;
+            border-top: 4px solid var(--gold);
+        }
+        .process-step:hover {
+            transform: translateY(-4px);
+        }
+        .process-step .step-number {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-bottom: 0.6rem;
+        }
+        .process-step h4 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        @media (max-width: 992px) {
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 576px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            padding: 3rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-banner h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .cta-banner p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1.2rem;
+        }
+        .cta-banner .btn-primary {
+            background: #fff;
+            color: var(--primary);
+            border-color: #fff;
+        }
+        .cta-banner .btn-primary:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: #b0c4de;
+            padding: 2.5rem 0 1.5rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.95rem;
+            color: #b0c4de;
+            line-height: 1.8;
+        }
+        .footer-grid a:hover {
+            color: var(--gold);
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid ul li {
+            padding: 0.2rem 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a9db0;
+        }
+        .footer-bottom a {
+            color: var(--gold);
+            margin: 0 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cookie-inner p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex: 1;
+            color: #e2e8f0;
+        }
+        .cookie-inner a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-inner .btn-cookie {
+            background: var(--gold);
+            border: none;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .cookie-inner .btn-cookie:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 600px) {
+            .cookie-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <!-- Desktop Nav -->
+            <div class="logo">
+                <h1>Global Academy <span>of Education Research</span></h1>
+                <div class="tagline">Mathematics Education · Research · Training · Consultancy</div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="lang-btn" id="langToggleDesktop">ने</button></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo">
+                    <h1>Global Academy <span>of Ed. Research</span></h1>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <button class="mobile-lang" id="langToggleMobile">ने</button>
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container" id="heroEn">
+            <h1>Our <span>Services</span></h1>
+            <p>Comprehensive solutions designed to advance mathematics education through research, training, and collaboration — tailored to your institution's needs.</p>
+        </div>
+        <div class="container" id="heroNp" style="display:none;">
+            <h1>हाम्रा <span>सेवाहरू</span></h1>
+            <p>अनुसन्धान, तालिम र सहकार्य मार्फत गणित शिक्षाको उन्नतिका लागि डिजाइन गरिएका व्यापक समाधानहरू — तपाईंको संस्थाको आवश्यकता अनुसार।</p>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES DETAIL ===== -->
+    <section class="services-overview">
+        <div class="container">
+
+            <!-- Service 1: Research -->
+            <div class="service-detail" id="service1En">
+                <div>
+                    <span class="icon-big">🔬</span>
+                    <h3>Research <span>&amp; Innovation</span></h3>
+                    <p>We conduct rigorous, evidence‑based research to advance mathematics education and improve classroom practices. Our research is grounded in qualitative and quantitative methodologies, with a strong emphasis on ethnomathematics, ethnomodelling, and culturally responsive pedagogy.</p>
+                    <ul>
+                        <li><strong>Mathematics Education Research</strong> – In‑depth academic research on ethnomathematics, ethnomodelling, Vedic mathematics, and technology‑integrated pedagogy.</li>
+                        <li><strong>Action Research in the Classroom</strong> – Collaborative, reflective research conducted with teachers to identify challenges and test innovative strategies.</li>
+                        <li><strong>Educational Innovation</strong> – Design and testing of new pedagogical models, including the proprietary <strong>N‑MELODY Framework</strong>.</li>
+                        <li><strong>Ethnographic Studies</strong> – Documentation of mathematical practices embedded in cultural artifacts, rituals, and community traditions.</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">🧪</div>
+                    <p><strong>Ethnomathematics · Ethnomodelling · Action Research</strong><br />Advancing knowledge through rigorous inquiry.</p>
+                </div>
+            </div>
+            <div class="service-detail" id="service1Np" style="display:none;">
+                <div>
+                    <span class="icon-big">🔬</span>
+                    <h3>अनुसन्धान <span>र नवप्रवर्तन</span></h3>
+                    <p>हामी गणित शिक्षा अगाडि बढाउन र कक्षा अभ्यासहरू सुधार गर्न कठोर, प्रमाण-आधारित अनुसन्धान सञ्चालन गर्दछौं। हाम्रो अनुसन्धान गुणात्मक र मात्रात्मक विधिहरूमा आधारित छ, नृजातीय गणित, नृजातीय मोडेलिङ र सांस्कृतिक-उत्तरदायी शिक्षाशास्त्रमा विशेष जोड दिइएको छ।</p>
+                    <ul>
+                        <li><strong>गणित शिक्षा अनुसन्धान</strong> – नृजातीय गणित, नृजातीय मोडेलिङ, वैदिक गणित र प्रविधि-एकीकृत शिक्षाशास्त्रमा गहन शैक्षिक अनुसन्धान।</li>
+                        <li><strong>कक्षामा कार्य-अनुसन्धान</strong> – चुनौतीहरू पहिचान गर्न र नवीन रणनीतिहरू परीक्षण गर्न शिक्षकहरूसँग गरिने सहयोगात्मक अनुसन्धान।</li>
+                        <li><strong>शैक्षिक नवप्रवर्तन</strong> – <strong>N‑MELODY ढाँचा</strong> सहित नयाँ शैक्षिक मोडेलहरूको डिजाइन र परीक्षण।</li>
+                        <li><strong>जातीय-अध्ययन</strong> – सांस्कृतिक कलाकृतिहरू, अनुष्ठानहरू र सामुदायिक परम्पराहरूमा गाडिएका गणितीय अभ्यासहरूको दस्तावेजीकरण।</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">🧪</div>
+                    <p><strong>नृजातीय गणित · नृजातीय मोडेलिङ · कार्य-अनुसन्धान</strong><br />कठोर अन्वेषण मार्फत ज्ञान अगाडि बढाउँदै।</p>
+                </div>
+            </div>
+
+            <!-- Service 2: Teacher Training -->
+            <div class="service-detail" id="service2En">
+                <div>
+                    <span class="icon-big">🎓</span>
+                    <h3>Teacher <span>Training</span></h3>
+                    <p>We deliver high‑quality, hands‑on training programs that empower teachers, educational leaders, and researchers with practical, research‑based skills for transformative classroom practice.</p>
+                    <ul>
+                        <li><strong>Teacher Training Programs</strong> – Comprehensive training for primary, secondary, and higher secondary mathematics teachers on pedagogy, assessment, and student engagement.</li>
+                        <li><strong>Professional Development Courses</strong> – Continuing education on curriculum design, ICT integration, inclusive education, and reflective teaching.</li>
+                        <li><strong>ICT in Mathematics Education</strong> – Hands‑on workshops on <strong>GeoGebra</strong>, mathematical modelling software, and online collaborative platforms.</li>
+                        <li><strong>N‑MELODY Framework Training</strong> – Intensive training on our proprietary pedagogical model integrating critical, reflective, and transformative approaches.</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">👩‍🏫</div>
+                    <p><strong>GeoGebra · ICT Integration · N‑MELODY</strong><br />Empowering educators for transformative teaching.</p>
+                </div>
+            </div>
+            <div class="service-detail" id="service2Np" style="display:none;">
+                <div>
+                    <span class="icon-big">🎓</span>
+                    <h3>शिक्षक <span>तालिम</span></h3>
+                    <p>हामी शिक्षकहरूलाई व्यावहारिक, अनुसन्धान-आधारित सीपहरू प्रदान गर्ने उच्च-गुणस्तरीय तालिम कार्यक्रमहरू सञ्चालन गर्दछौं, जसले कक्षाकोठाको अभ्यासलाई रूपान्तरण गर्दछ।</p>
+                    <ul>
+                        <li><strong>शिक्षक तालिम कार्यक्रमहरू</strong> – प्राथमिक, माध्यमिक र उच्च माध्यमिक गणित शिक्षकहरूका लागि शिक्षाशास्त्र, मूल्याङ्कन र विद्यार्थी संलग्नतामा व्यापक तालिम।</li>
+                        <li><strong>व्यावसायिक विकास पाठ्यक्रमहरू</strong> – पाठ्यक्रम डिजाइन, ICT एकीकरण, समावेशी शिक्षा र चिन्तनशील शिक्षणमा निरन्तर शिक्षा।</li>
+                        <li><strong>गणित शिक्षामा ICT</strong> – <strong>GeoGebra</strong>, गणितीय मोडेलिङ सफ्टवेयर र अनलाइन सहयोगी प्लेटफर्महरूमा व्यावहारिक कार्यशालाहरू।</li>
+                        <li><strong>N‑MELODY ढाँचा तालिम</strong> – आलोचनात्मक, चिन्तनशील र रूपान्तरणकारी दृष्टिकोणहरू एकीकृत गर्ने हाम्रो स्वामित्वपूर्ण शैक्षिक मोडेलमा गहन तालिम।</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">👩‍🏫</div>
+                    <p><strong>GeoGebra · ICT एकीकरण · N‑MELODY</strong><br />रूपान्तरणकारी शिक्षणका लागि शिक्षकहरूलाई सशक्त बनाउँदै।</p>
+                </div>
+            </div>
+
+            <!-- Service 3: Conferences & Events -->
+            <div class="service-detail" id="service3En">
+                <div>
+                    <span class="icon-big">🗣️</span>
+                    <h3>Conferences <span>&amp; Events</span></h3>
+                    <p>We organize and manage academic events that bring together educators, researchers, and policymakers to share knowledge, collaborate, and drive innovation in mathematics education.</p>
+                    <ul>
+                        <li><strong>National/International Conferences</strong> – Planning and execution of large‑scale conferences on mathematics education, STEM/STEAM, ethnomathematics, and educational research.</li>
+                        <li><strong>Seminars &amp; Symposia</strong> – Smaller, focused gatherings for in‑depth discussion on ethnomodelling, Vedic mathematics, or transformative pedagogy.</li>
+                        <li><strong>Academic Workshops</strong> – Interactive, skill‑based workshops for teachers, researchers, and graduate students on research methodology, academic writing, and innovative practices.</li>
+                        <li><strong>Talk Series &amp; Webinars</strong> – Online and in‑person series featuring national and international experts.</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">🎤</div>
+                    <p><strong>Conferences · Seminars · Webinars</strong><br />Connecting minds across borders.</p>
+                </div>
+            </div>
+            <div class="service-detail" id="service3Np" style="display:none;">
+                <div>
+                    <span class="icon-big">🗣️</span>
+                    <h3>सम्मेलन <span>र कार्यक्रमहरू</span></h3>
+                    <p>हामी शिक्षकहरू, अनुसन्धानकर्ताहरू र नीति-निर्माताहरूलाई एकै ठाउँमा ल्याउने शैक्षिक कार्यक्रमहरूको आयोजना र व्यवस्थापन गर्दछौं।</p>
+                    <ul>
+                        <li><strong>राष्ट्रिय/अन्तर्राष्ट्रिय सम्मेलनहरू</strong> – गणित शिक्षा, STEM/STEAM, नृजातीय गणित र शैक्षिक अनुसन्धानमा ठूला-स्तरीय सम्मेलनहरूको योजना र कार्यान्वयन।</li>
+                        <li><strong>गोष्ठी र संगोष्ठीहरू</strong> – नृजातीय मोडेलिङ, वैदिक गणित वा रूपान्तरणकारी शिक्षाशास्त्रमा गहन छलफलका लागि साना, केन्द्रित सभाहरू।</li>
+                        <li><strong>शैक्षिक कार्यशालाहरू</strong> – शिक्षकहरू, अनुसन्धानकर्ताहरू र स्नातकोत्तर विद्यार्थीहरूका लागि अनुसन्धान विधि, शैक्षिक लेखन र नवीन अभ्यासहरूमा अन्तरक्रियात्मक कार्यशालाहरू।</li>
+                        <li><strong>वार्ता श्रृंखला र वेबिनारहरू</strong> – राष्ट्रिय र अन्तर्राष्ट्रिय विज्ञहरू समावेश गरिएका अनलाइन र भौतिक कार्यक्रमहरू।</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">🎤</div>
+                    <p><strong>सम्मेलन · गोष्ठी · वेबिनार</strong><br />सिमानापारि दिमागहरू जोड्दै।</p>
+                </div>
+            </div>
+
+            <!-- Service 4: Consultancy & Projects -->
+            <div class="service-detail" id="service4En">
+                <div>
+                    <span class="icon-big">🤝</span>
+                    <h3>Consultancy <span>&amp; Projects</span></h3>
+                    <p>We provide expert advisory services to educational institutions, government bodies, international development partners, and non‑governmental organizations.</p>
+                    <ul>
+                        <li><strong>Curriculum Development</strong> – Design and review of mathematics curricula aligned with national frameworks (NEB, CTEVT) and international standards.</li>
+                        <li><strong>Educational Project Management</strong> – End‑to‑end management of projects, including needs assessment, program design, implementation support, and impact evaluation.</li>
+                        <li><strong>Policy Advisory</strong> – Technical advice to government agencies on mathematics education policy, teacher professional development frameworks, and quality assurance.</li>
+                        <li><strong>Monitoring &amp; Evaluation (M&amp;E)</strong> – Design and implementation of M&amp;E frameworks for educational programs, ensuring accountability and evidence‑based decision‑making.</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">📋</div>
+                    <p><strong>Curriculum · Policy · M&amp;E</strong><br />Strategic advisory for lasting impact.</p>
+                </div>
+            </div>
+            <div class="service-detail" id="service4Np" style="display:none;">
+                <div>
+                    <span class="icon-big">🤝</span>
+                    <h3>परामर्श <span>र परियोजनाहरू</span></h3>
+                    <p>हामी शैक्षिक संस्थाहरू, सरकारी निकायहरू, अन्तर्राष्ट्रिय विकास साझेदारहरू र गैर-सरकारी संस्थाहरूलाई विज्ञ सल्लाहकार सेवाहरू प्रदान गर्दछौं।</p>
+                    <ul>
+                        <li><strong>पाठ्यक्रम विकास</strong> – राष्ट्रिय ढाँचाहरू (NEB, CTEVT) र अन्तर्राष्ट्रिय मापदण्डहरूसँग मिल्दो गणित पाठ्यक्रमको डिजाइन र समीक्षा।</li>
+                        <li><strong>शैक्षिक परियोजना व्यवस्थापन</strong> – आवश्यकता मूल्याङ्कन, कार्यक्रम डिजाइन, कार्यान्वयन सहायता र प्रभाव मूल्याङ्कन सहित परियोजनाहरूको अन्त-देखि-अन्त व्यवस्थापन।</li>
+                        <li><strong>नीति सल्लाह</strong> – गणित शिक्षा नीति, शिक्षक व्यावसायिक विकास ढाँचा र गुणस्तर आश्वासनमा सरकारी निकायहरूलाई प्राविधिक सल्लाह।</li>
+                        <li><strong>अनुगमन र मूल्याङ्कन (M&amp;E)</strong> – शैक्षिक कार्यक्रमहरूको लागि M&amp;E ढाँचाको डिजाइन र कार्यान्वयन, जवाफदेहिता र प्रमाण-आधारित निर्णय सुनिश्चित गर्ने।</li>
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <div class="emoji-big">📋</div>
+                    <p><strong>पाठ्यक्रम · नीति · M&amp;E</strong><br />स्थायी प्रभावका लागि रणनीतिक सल्लाह।</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SERVICE DELIVERY PROCESS ===== -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-title" id="processTitleEn">
+                <h2>Our Service Delivery Process</h2>
+                <p>How we work with you from start to finish — ensuring transparency, quality, and impact.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="processTitleNp" style="display:none;">
+                <h2>हाम्रो सेवा वितरण प्रक्रिया</h2>
+                <p>सुरुदेखि अन्त्यसम्म हामी कसरी काम गर्दछौं — पारदर्शिता, गुणस्तर र प्रभाव सुनिश्चित गर्दै।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="process-grid" id="processEn">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Initial Consultation</h4>
+                    <p>We meet with you to understand your needs, challenges, and goals.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Needs Assessment</h4>
+                    <p>We conduct a thorough analysis of your context, resources, and target audience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Design &amp; Development</h4>
+                    <p>We design a customized solution — whether a training program, curriculum, or research study.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Implementation &amp; Follow‑up</h4>
+                    <p>We deliver the solution and provide ongoing support, monitoring, and evaluation.</p>
+                </div>
+            </div>
+            <div class="process-grid" id="processNp" style="display:none;">
+                <div class="process-step">
+                    <div class="step-number">१</div>
+                    <h4>प्रारम्भिक परामर्श</h4>
+                    <p>तपाईंको आवश्यकता, चुनौती र लक्ष्यहरू बुझ्न हामी तपाईंसँग भेट्छौं।</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">२</div>
+                    <h4>आवश्यकता मूल्याङ्कन</h4>
+                    <p>हामी तपाईंको सन्दर्भ, स्रोत र लक्षित समूहको गहन विश्लेषण गर्दछौं।</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">३</div>
+                    <h4>डिजाइन र विकास</h4>
+                    <p>हामी अनुकूलित समाधान — चाहे तालिम कार्यक्रम, पाठ्यक्रम वा अनुसन्धान अध्ययन — डिजाइन गर्दछौं।</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">४</div>
+                    <h4>कार्यान्वयन र अनुगमन</h4>
+                    <p>हामी समाधान प्रदान गर्छौं र निरन्तर सहायता, अनुगमन र मूल्याङ्कन प्रदान गर्छौं।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="ctaEn">
+        <div class="container">
+            <h2>Ready to Transform Mathematics Education?</h2>
+            <p>Let’s discuss how we can support your institution with research, training, or consultancy.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+    <section class="cta-banner" id="ctaNp" style="display:none;">
+        <div class="container">
+            <h2>गणित शिक्षा रूपान्तरण गर्न तयार हुनुहुन्छ?</h2>
+            <p>हामी तपाईंको संस्थालाई अनुसन्धान, तालिम वा परामर्श मार्फत कसरी सहायता गर्न सक्छौं भनेर छलफल गरौं।</p>
+            <a href="contact.html" class="btn-primary">सम्पर्क गर्नुहोस्</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Global Academy of Education Research</h4>
+                    <p>Advancing mathematics education through research, innovation, and culturally responsive pedagogy. Founded by Dr. Kharika Devi Parajuli.</p>
+                    <p style="margin-top:0.6rem;"><strong>📍</strong> Pokhara-30, Dhungepatan, Kaski, Nepal</p>
+                    <p><strong>📧</strong> kharikaparajuli@gmail.com</p>
+                    <p><strong>📞</strong> +977-9846650159</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Global Academy of Education Research Private Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <p>We use cookies to remember your language preference and improve your experience. By continuing, you consent to our <a href="cookie.html">Cookie Policy</a>.</p>
+            <button class="btn-cookie" id="acceptCookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ----- LANGUAGE TOGGLE -----
+        let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+
+            document.querySelectorAll('[id$="En"]').forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+            document.querySelectorAll('[id$="Np"]').forEach(el => el.style.display = (lang === 'ne') ? '' : 'none');
+
+            document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+                btn.textContent = (lang === 'en') ? 'ने' : 'E';
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        function toggleLang() {
+            setLanguage(currentLang === 'en' ? 'ne' : 'en');
+        }
+
+        setLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+            btn.addEventListener('click', toggleLang);
+        });
+
+        // ----- MOBILE MENU -----
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            hamburger.classList.toggle('open', menuOpen);
+            hamburger.textContent = menuOpen ? '✕' : '☰';
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.textContent = '☰';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ----- COOKIE CONSENT -----
+        (function() {
+            const consent = localStorage.getItem('cookieConsent');
+            const banner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookie');
+
+            if (!consent) {
+                setTimeout(() => banner.classList.add('show'), 400);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.classList.remove('show');
+            });
+        })();
+    </script>
+
+</body>
+</html>
