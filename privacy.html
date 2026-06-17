@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy – Global Academy of Education Research</title>
+    <meta name="description" content="Privacy Policy for Global Academy of Education Research. Learn how we collect, use, and protect your personal information." />
+    <meta name="keywords" content="privacy policy, data protection, GDPR, Global Academy of Education Research" />
+    <meta name="author" content="Global Academy of Education Research Private Limited" />
+    <link rel="canonical" href="https://globalacademyeduresearch.com/privacy.html" />
+    <meta property="og:title" content="Privacy Policy – Global Academy of Education Research" />
+    <meta property="og:description" content="Learn how we collect, use, and protect your personal information." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== COLOR VARIABLES ===== */
+        :root {
+            --primary: #0f2a47;
+            --primary-light: #1a3d66;
+            --gold: #f4a236;
+            --gold-dark: #d4892b;
+            --mint: #20b2aa;
+            --gray-bg: #f4f7fb;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--primary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo h1 span {
+            color: var(--gold);
+        }
+        .logo .tagline {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: #b0c4de;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .nav-desktop ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-desktop a {
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-desktop a:hover {
+            color: var(--gold);
+        }
+        .nav-desktop .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-desktop .lang-btn:hover {
+            background: var(--gold);
+            color: var(--primary);
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+        .hamburger.open {
+            transform: rotate(90deg);
+        }
+        .mobile-lang {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            .logo .tagline {
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Mobile Slide Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            top: 72px;
+            height: calc(100vh - 72px);
+        }
+        .mobile-menu a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 60px;
+                height: calc(100vh - 60px);
+            }
+        }
+
+        /* ===== PAGE HERO (Inner) ===== */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3d66 60%, #2b4d7a 100%);
+            color: #fff;
+            padding: 3.5rem 0;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .page-hero h1 span {
+            color: var(--gold);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 2.5rem 0;
+            }
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== LEGAL CONTENT ===== */
+        .legal-content {
+            padding: 4rem 0;
+        }
+        .legal-content h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 0.3rem;
+        }
+        .legal-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .legal-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+        .legal-content p,
+        .legal-content li {
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+        }
+        .legal-content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .legal-content ul li {
+            margin-bottom: 0.4rem;
+        }
+        .legal-content strong {
+            color: var(--text-dark);
+        }
+        .legal-content .last-updated {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.2rem;
+            background: var(--gray-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+        .legal-content .section-divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 2.5rem 0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: #b0c4de;
+            padding: 2.5rem 0 1.5rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.95rem;
+            color: #b0c4de;
+            line-height: 1.8;
+        }
+        .footer-grid a:hover {
+            color: var(--gold);
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid ul li {
+            padding: 0.2rem 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a9db0;
+        }
+        .footer-bottom a {
+            color: var(--gold);
+            margin: 0 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cookie-inner p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex: 1;
+            color: #e2e8f0;
+        }
+        .cookie-inner a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-inner .btn-cookie {
+            background: var(--gold);
+            border: none;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .cookie-inner .btn-cookie:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 600px) {
+            .cookie-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <!-- Desktop Nav -->
+            <div class="logo">
+                <h1>Global Academy <span>of Education Research</span></h1>
+                <div class="tagline">Mathematics Education · Research · Training · Consultancy</div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="lang-btn" id="langToggleDesktop">ने</button></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo">
+                    <h1>Global Academy <span>of Ed. Research</span></h1>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <button class="mobile-lang" id="langToggleMobile">ने</button>
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container" id="heroEn">
+            <h1>Privacy <span>Policy</span></h1>
+            <p>Your privacy matters to us. Learn how we collect, use, and protect your personal information.</p>
+        </div>
+        <div class="container" id="heroNp" style="display:none;">
+            <h1><span>गोपनीयता</span> नीति</h1>
+            <p>तपाईंको गोपनीयता हाम्रो लागि महत्त्वपूर्ण छ। हामी कसरी तपाईंको व्यक्तिगत जानकारी संकलन, प्रयोग र सुरक्षा गर्दछौं भनेर जान्नुहोस्।</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="legal-content">
+        <div class="container">
+
+            <div id="privacyEn">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> 18 June 2026
+                </div>
+
+                <h2>1. Introduction</h2>
+                <p><strong>Global Academy of Education Research Private Limited</strong> ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, use our services, or interact with us.</p>
+                <p>By using our website and services, you agree to the collection and use of information in accordance with this policy. If you do not agree with this policy, please do not use our website or services.</p>
+
+                <h2>2. Information We Collect</h2>
+                <p>We may collect the following types of personal information:</p>
+                <ul>
+                    <li><strong>Contact Information:</strong> Name, email address, phone number, mailing address, and organization/institution name.</li>
+                    <li><strong>Communication Data:</strong> Information you provide when you contact us via email, phone, or through our contact form, including the content of your messages.</li>
+                    <li><strong>Usage Data:</strong> Information about how you use our website, including pages visited, time spent, and referring URLs. This is collected via cookies and analytics tools.</li>
+                    <li><strong>Technical Data:</strong> IP address, browser type, device information, and operating system.</li>
+                </ul>
+                <p>We collect this information to provide and improve our services, communicate with you, and ensure the security of our website.</p>
+
+                <h2>3. How We Use Your Information</h2>
+                <p>We use your personal information for the following purposes:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our research, training, consultancy, and event services.</li>
+                    <li>To respond to your inquiries, requests, or complaints.</li>
+                    <li>To send you information, updates, and promotional materials (only if you have opted in).</li>
+                    <li>To process payments and manage contracts (when applicable).</li>
+                    <li>To analyze website usage and improve user experience.</li>
+                    <li>To comply with legal obligations and protect our rights and interests.</li>
+                </ul>
+
+                <h2>4. Legal Basis for Processing (GDPR Compliance)</h2>
+                <p>If you are located in the European Economic Area (EEA), we process your personal data based on the following legal grounds:</p>
+                <ul>
+                    <li><strong>Consent:</strong> Where you have given us explicit consent to process your data.</li>
+                    <li><strong>Contractual Necessity:</strong> Where processing is necessary for the performance of a contract with you.</li>
+                    <li><strong>Legal Obligation:</strong> Where we are required to comply with legal obligations.</li>
+                    <li><strong>Legitimate Interest:</strong> Where processing is necessary for our legitimate business interests (e.g., improving our services).</li>
+                </ul>
+
+                <h2>5. Data Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your information in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> We may share data with trusted third-party service providers who assist us in operating our website, conducting business, or providing services (e.g., email hosting, analytics). These providers are contractually obligated to protect your data.</li>
+                    <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law, court order, or to protect the rights, property, or safety of Global Academy of Education Research, our users, or others.</li>
+                    <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or asset sale, your personal information may be transferred to the new entity.</li>
+                </ul>
+
+                <h2>6. Data Security</h2>
+                <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, misuse, or alteration. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+                <h2>7. Data Retention</h2>
+                <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.</p>
+
+                <h2>8. Your Data Protection Rights</h2>
+                <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of the personal information we hold about you.</li>
+                    <li><strong>Rectification:</strong> Request correction of inaccurate or incomplete data.</li>
+                    <li><strong>Erasure:</strong> Request deletion of your personal information (subject to certain legal exceptions).</li>
+                    <li><strong>Restriction:</strong> Request restriction of processing of your data.</li>
+                    <li><strong>Data Portability:</strong> Request transfer of your data to another organization.</li>
+                    <li><strong>Objection:</strong> Object to the processing of your data for direct marketing or other purposes.</li>
+                    <li><strong>Withdraw Consent:</strong> Withdraw your consent at any time where we are relying on consent to process your data.</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us using the details provided in Section 12 below. We will respond to your request within 30 days.</p>
+
+                <h2>9. Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and remember your language preferences. For more information on how we use cookies, please refer to our <a href="cookie.html" style="color:var(--gold-dark); font-weight:500;">Cookie Policy</a>.</p>
+                <p>You can control the use of cookies through your browser settings. However, disabling cookies may affect the functionality of our website.</p>
+
+                <h2>10. Third-Party Links</h2>
+                <p>Our website may contain links to third-party websites. This Privacy Policy does not apply to those websites. We recommend reviewing the privacy policies of any third-party sites you visit.</p>
+
+                <h2>11. Children's Privacy</h2>
+                <p>Our website and services are not directed at children under the age of 16. We do not knowingly collect personal information from children. If you believe we have collected data from a child, please contact us, and we will delete it promptly.</p>
+
+                <h2>12. Changes to This Privacy Policy</h2>
+                <p>We reserve the right to update or modify this Privacy Policy at any time. Any changes will be effective immediately upon posting on this page. We encourage you to review this policy periodically to stay informed about how we protect your privacy.</p>
+
+                <h2>13. Contact Us</h2>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+                <p style="margin-top:0.2rem;">
+                    <strong>Global Academy of Education Research Private Limited</strong><br />
+                    Pokhara-30, Dhungepatan, Kaski, Nepal<br />
+                    <strong>Email:</strong> <a href="mailto:kharikaparajuli@gmail.com" style="color:var(--gold-dark);">kharikaparajuli@gmail.com</a><br />
+                    <strong>Phone:</strong> <a href="tel:+9779846650159" style="color:var(--gold-dark);">+977-9846650159</a>
+                </p>
+
+                <div class="section-divider"></div>
+                <p style="font-size:0.9rem; color:var(--text-light); text-align:center;">
+                    © 2026 Global Academy of Education Research Private Limited. All Rights Reserved.
+                </p>
+            </div>
+
+            <!-- ===== NEPALI VERSION ===== -->
+            <div id="privacyNp" style="display:none;">
+                <div class="last-updated">
+                    <strong>अन्तिम मिति:</strong> १८ जुन २०२६
+                </div>
+
+                <h2>१. परिचय</h2>
+                <p><strong>ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड</strong> ("हामी") तपाईंको गोपनीयता सुरक्षित गर्न प्रतिबद्ध छ। यो गोपनीयता नीतिले हामी कसरी तपाईंको व्यक्तिगत जानकारी संकलन, प्रयोग, खुलासा र सुरक्षा गर्दछौं भनेर व्याख्या गर्दछ जब तपाईं हाम्रो वेबसाइट भ्रमण गर्नुहुन्छ, हाम्रो सेवाहरू प्रयोग गर्नुहुन्छ, वा हामीसँग अन्तरक्रिया गर्नुहुन्छ।</p>
+                <p>हाम्रो वेबसाइट र सेवाहरू प्रयोग गरेर, तपाईं यस नीति अनुसार जानकारीको संकलन र प्रयोगमा सहमत हुनुहुन्छ। यदि तपाईं यस नीतिसँग सहमत हुनुहुन्न भने, कृपया हाम्रो वेबसाइट वा सेवाहरू प्रयोग नगर्नुहोस्।</p>
+
+                <h2>२. हामीले संकलन गर्ने जानकारी</h2>
+                <p>हामी निम्न प्रकारका व्यक्तिगत जानकारीहरू संकलन गर्न सक्छौं:</p>
+                <ul>
+                    <li><strong>सम्पर्क विवरण:</strong> नाम, इमेल ठेगाना, फोन नम्बर, मेलिङ ठेगाना, र संस्था/संगठनको नाम।</li>
+                    <li><strong>संचार डाटा:</strong> तपाईंले हामीलाई इमेल, फोन, वा हाम्रो सम्पर्क फारम मार्फत सम्पर्क गर्दा प्रदान गर्नुभएको जानकारी, तपाईंको सन्देशहरूको सामग्री सहित।</li>
+                    <li><strong>प्रयोग डाटा:</strong> तपाईंले हाम्रो वेबसाइट कसरी प्रयोग गर्नुहुन्छ भन्ने जानकारी, जसमा भ्रमण गरिएका पृष्ठहरू, बिताएको समय, र सन्दर्भ URL हरू समावेश छन्। यो कुकीहरू र विश्लेषण उपकरणहरू मार्फत संकलन गरिन्छ।</li>
+                    <li><strong>प्राविधिक डाटा:</strong> IP ठेगाना, ब्राउजर प्रकार, उपकरण जानकारी, र अपरेटिङ प्रणाली।</li>
+                </ul>
+                <p>हामी हाम्रो सेवाहरू प्रदान र सुधार गर्न, तपाईंसँग संचार गर्न, र हाम्रो वेबसाइटको सुरक्षा सुनिश्चित गर्न यो जानकारी संकलन गर्दछौं।</p>
+
+                <h2>३. हामी तपाईंको जानकारी कसरी प्रयोग गर्दछौं</h2>
+                <p>हामी तपाईंको व्यक्तिगत जानकारी निम्न उद्देश्यका लागि प्रयोग गर्दछौं:</p>
+                <ul>
+                    <li>हाम्रो अनुसन्धान, तालिम, परामर्श, र इभेन्ट सेवाहरू प्रदान, मर्मत र सुधार गर्न।</li>
+                    <li>तपाईंका प्रश्नहरू, अनुरोधहरू, वा उजुरीहरूको जवाफ दिन।</li>
+                    <li>तपाईंलाई जानकारी, अद्यावधिकहरू, र प्रचारात्मक सामग्रीहरू पठाउन (यदि तपाईंले अप्ट-इन गर्नुभएको छ भने मात्र)।</li>
+                    <li>भुक्तानी प्रक्रिया र अनुबंधहरू व्यवस्थापन गर्न (लागू भएमा)।</li>
+                    <li>वेबसाइट प्रयोगको विश्लेषण गर्न र प्रयोगकर्ता अनुभव सुधार गर्न।</li>
+                    <li>कानूनी दायित्वहरूको पालना गर्न र हाम्रो अधिकार र हितहरूको सुरक्षा गर्न।</li>
+                </ul>
+
+                <h2>४. प्रशोधनको कानूनी आधार (GDPR अनुपालन)</h2>
+                <p>यदि तपाईं युरोपेली आर्थिक क्षेत्र (EEA) मा हुनुहुन्छ भने, हामी निम्न कानूनी आधारहरूमा तपाईंको व्यक्तिगत डाटा प्रशोधन गर्दछौं:</p>
+                <ul>
+                    <li><strong>सहमति:</strong> जहाँ तपाईंले हामीलाई तपाईंको डाटा प्रशोधन गर्न स्पष्ट सहमति दिनुभएको छ।</li>
+                    <li><strong>अनुबंधिक आवश्यकता:</strong> जहाँ प्रशोधन तपाईंसँगको अनुबंधको कार्यान्वयनको लागि आवश्यक छ।</li>
+                    <li><strong>कानूनी दायित्व:</strong> जहाँ हामी कानूनी दायित्वहरूको पालना गर्न आवश्यक छौं।</li>
+                    <li><strong>वैध हित:</strong> जहाँ प्रशोधन हाम्रो वैध व्यावसायिक हितहरूको लागि आवश्यक छ (जस्तै, हाम्रो सेवाहरू सुधार गर्न)।</li>
+                </ul>
+
+                <h2>५. डाटा साझेदारी र खुलासा</h2>
+                <p>हामी तपाईंको व्यक्तिगत जानकारी तेस्रो पक्षलाई बेच्दैनौं, व्यापार गर्दैनौं, वा भाडामा दिँदैनौं। तथापि, हामी निम्न परिस्थितिहरूमा तपाईंको जानकारी साझेदारी गर्न सक्छौं:</p>
+                <ul>
+                    <li><strong>सेवा प्रदायकहरू:</strong> हामी विश्वसनीय तेस्रो-पक्ष सेवा प्रदायकहरूसँग डाटा साझेदारी गर्न सक्छौं जसले हामीलाई हाम्रो वेबसाइट सञ्चालन, व्यवसाय सञ्चालन, वा सेवाहरू प्रदान गर्न सहायता गर्दछन् (जस्तै, इमेल होस्टिङ, एनालिटिक्स)। यी प्रदायकहरू तपाईंको डाटा सुरक्षित गर्न अनुबंधात्मक रूपमा बाध्य छन्।</li>
+                    <li><strong>कानूनी आवश्यकताहरू:</strong> हामी तपाईंको जानकारी खुलासा गर्न सक्छौं यदि कानून, अदालतको आदेश, वा ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च, हाम्रा प्रयोगकर्ताहरू, वा अरूको अधिकार, सम्पत्ति, वा सुरक्षाको रक्षा गर्न आवश्यक छ भने।</li>
+                    <li><strong>व्यावसायिक स्थानान्तरण:</strong> विलय, अधिग्रहण, वा सम्पत्ति बिक्रीको घटनामा, तपाईंको व्यक्तिगत जानकारी नयाँ संस्थामा स्थानान्तरण गर्न सकिन्छ।</li>
+                </ul>
+
+                <h2>६. डाटा सुरक्षा</h2>
+                <p>हामी तपाईंको व्यक्तिगत जानकारीलाई अनधिकृत पहुँच, हानि, दुरुपयोग, वा परिवर्तनबाट जोगाउन उचित प्राविधिक र संगठनात्मक उपायहरू लिन्छौं। तथापि, इन्टरनेटमा प्रसारण वा इलेक्ट्रोनिक भण्डारणको कुनै पनि विधि १००% सुरक्षित छैन, र हामी पूर्ण सुरक्षाको ग्यारेन्टी गर्न सक्दैनौं।</p>
+
+                <h2>७. डाटा अवधारण</h2>
+                <p>हामी तपाईंको व्यक्तिगत जानकारी यस गोपनीयता नीतिमा उल्लिखित उद्देश्यहरू पूरा गर्न आवश्यक भएसम्म मात्र राख्दछौं, जबसम्म कानूनले लामो अवधारण अवधि आवश्यक वा अनुमति दिँदैन। हामीलाई अब तपाईंको जानकारीको आवश्यकता नपर्दा, हामी यसलाई सुरक्षित रूपमा मेटाउने वा अनामित गर्नेछौं।</p>
+
+                <h2>८. तपाईंको डाटा संरक्षण अधिकारहरू</h2>
+                <p>तपाईंको क्षेत्राधिकारको आधारमा, तपाईंसँग आफ्नो व्यक्तिगत डाटाको सम्बन्धमा निम्न अधिकारहरू हुन सक्छन्:</p>
+                <ul>
+                    <li><strong>पहुँच:</strong> हामीसँग रहेको तपाईंको व्यक्तिगत जानकारीको प्रतिलिपि अनुरोध गर्ने।</li>
+                    <li><strong>सुधार:</strong> गलत वा अपूर्ण डाटाको सुधार अनुरोध गर्ने।</li>
+                    <li><strong>मेटाउने:</strong> तपाईंको व्यक्तिगत जानकारी मेटाउन अनुरोध गर्ने (निश्चित कानूनी अपवादहरूको अधीनमा)।</li>
+                    <li><strong>प्रतिबन्ध:</strong> तपाईंको डाटाको प्रशोधनमा प्रतिबन्ध अनुरोध गर्ने।</li>
+                    <li><strong>डाटा पोर्टेबिलिटी:</strong> तपाईंको डाटा अर्को संस्थामा स्थानान्तरण गर्न अनुरोध गर्ने।</li>
+                    <li><strong>आपत्ति:</strong> प्रत्यक्ष मार्केटिङ वा अन्य उद्देश्यका लागि तपाईंको डाटाको प्रशोधनमा आपत्ति गर्ने।</li>
+                    <li><strong>सहमति फिर्ता लिनुहोस्:</strong> तपाईंको डाटा प्रशोधन गर्न हामी सहमतिमा निर्भर रहेको ठाउँमा कुनै पनि समयमा आफ्नो सहमति फिर्ता लिनुहोस्।</li>
+                </ul>
+                <p>यी मध्ये कुनै पनि अधिकार प्रयोग गर्न, कृपया तलको धारा १२ मा प्रदान गरिएको विवरण प्रयोग गरेर हामीलाई सम्पर्क गर्नुहोस्। हामी ३० दिनभित्र तपाईंको अनुरोधको जवाफ दिनेछौं।</p>
+
+                <h2>९. कुकीहरू र ट्र्याकिङ प्रविधिहरू</h2>
+                <p>हामी तपाईंको ब्राउजिङ अनुभव बढाउन, वेबसाइट ट्राफिकको विश्लेषण गर्न, र तपाईंको भाषा प्राथमिकताहरू सम्झन कुकीहरू र समान ट्र्याकिङ प्रविधिहरू प्रयोग गर्दछौं। हामी कसरी कुकीहरू प्रयोग गर्दछौं भन्ने बारे थप जानकारीको लागि, कृपया हाम्रो <a href="cookie.html" style="color:var(--gold-dark); font-weight:500;">कुकी नीति</a> हेर्नुहोस्।</p>
+                <p>तपाईं आफ्नो ब्राउजर सेटिङहरू मार्फत कुकीहरूको प्रयोग नियन्त्रण गर्न सक्नुहुन्छ। तथापि, कुकीहरू असक्षम गर्दा हाम्रो वेबसाइटको कार्यक्षमतालाई असर गर्न सक्छ।</p>
+
+                <h2>१०. तृतीय-पक्ष लिङ्कहरू</h2>
+                <p>हाम्रो वेबसाइटमा तृतीय-पक्ष वेबसाइटहरूको लिङ्कहरू हुन सक्छन्। यो गोपनीयता नीति ती वेबसाइटहरूमा लागू हुँदैन। हामी तपाईंले भ्रमण गर्नुभएको कुनै पनि तृतीय-पक्ष साइटहरूको गोपनीयता नीतिहरू समीक्षा गर्न सिफारिस गर्दछौं।</p>
+
+                <h2>११. बालबालिकाको गोपनीयता</h2>
+                <p>हाम्रो वेबसाइट र सेवाहरू १६ वर्ष मुनिका बालबालिकाहरूका लागि निर्देशित छैनन्। हामी जानाजानी बालबालिकाहरूबाट व्यक्तिगत जानकारी संकलन गर्दैनौं। यदि तपाईंलाई हामीले बालबालिकाबाट डाटा संकलन गरेको विश्वास छ भने, कृपया हामीलाई सम्पर्क गर्नुहोस्, र हामी यसलाई तुरुन्त मेटाउनेछौं।</p>
+
+                <h2>१२. यस गोपनीयता नीतिमा परिवर्तनहरू</h2>
+                <p>हामी कुनै पनि समयमा यस गोपनीयता नीति अद्यावधिक वा परिमार्जन गर्ने अधिकार सुरक्षित राख्छौं। कुनै पनि परिवर्तन यस पृष्ठमा पोस्ट गरेपछि तुरुन्त प्रभावकारी हुनेछ। हामी तपाईंलाई हामी कसरी तपाईंको गोपनीयता सुरक्षित गर्दछौं भन्ने बारे जानकारी रहन यो नीति नियमित रूपमा समीक्षा गर्न प्रोत्साहित गर्दछौं।</p>
+
+                <h2>१३. हामीलाई सम्पर्क गर्नुहोस्</h2>
+                <p>यदि तपाईंसँग यस गोपनीयता नीतिको बारेमा कुनै प्रश्न, चिन्ता, वा अनुरोधहरू छन् भने, कृपया हामीलाई सम्पर्क गर्नुहोस्:</p>
+                <p style="margin-top:0.2rem;">
+                    <strong>ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड</strong><br />
+                    पोखरा-३०, ढुङ्गेपाटन, कास्की, नेपाल<br />
+                    <strong>इमेल:</strong> <a href="mailto:kharikaparajuli@gmail.com" style="color:var(--gold-dark);">kharikaparajuli@gmail.com</a><br />
+                    <strong>फोन:</strong> <a href="tel:+9779846650159" style="color:var(--gold-dark);">+977-9846650159</a>
+                </p>
+
+                <div class="section-divider"></div>
+                <p style="font-size:0.9rem; color:var(--text-light); text-align:center;">
+                    © २०२६ ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च प्राइभेट लिमिटेड। सबै अधिकार सुरक्षित।
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Global Academy of Education Research</h4>
+                    <p>Advancing mathematics education through research, innovation, and culturally responsive pedagogy. Founded by Dr. Kharika Devi Parajuli.</p>
+                    <p style="margin-top:0.6rem;"><strong>📍</strong> Pokhara-30, Dhungepatan, Kaski, Nepal</p>
+                    <p><strong>📧</strong> kharikaparajuli@gmail.com</p>
+                    <p><strong>📞</strong> +977-9846650159</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Global Academy of Education Research Private Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <p>We use cookies to remember your language preference and improve your experience. By continuing, you consent to our <a href="cookie.html">Cookie Policy</a>.</p>
+            <button class="btn-cookie" id="acceptCookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ----- LANGUAGE TOGGLE -----
+        let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+
+            document.querySelectorAll('[id$="En"]').forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+            document.querySelectorAll('[id$="Np"]').forEach(el => el.style.display = (lang === 'ne') ? '' : 'none');
+
+            document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+                btn.textContent = (lang === 'en') ? 'ने' : 'E';
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        function toggleLang() {
+            setLanguage(currentLang === 'en' ? 'ne' : 'en');
+        }
+
+        setLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+            btn.addEventListener('click', toggleLang);
+        });
+
+        // ----- MOBILE MENU -----
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            hamburger.classList.toggle('open', menuOpen);
+            hamburger.textContent = menuOpen ? '✕' : '☰';
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.textContent = '☰';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ----- COOKIE CONSENT -----
+        (function() {
+            const consent = localStorage.getItem('cookieConsent');
+            const banner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookie');
+
+            if (!consent) {
+                setTimeout(() => banner.classList.add('show'), 400);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.classList.remove('show');
+            });
+        })();
+    </script>
+
+</body>
+</html>
