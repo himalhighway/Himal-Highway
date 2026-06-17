@@ -1,0 +1,92 @@
+# ================================================
+# robots.txt for Global Academy of Education Research
+# Domain: https://globalacademyeduresearch.com
+# Last Updated: 18 June 2026
+# ================================================
+
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# ================================================
+# DISALLOW (Pages to exclude from search results)
+# ================================================
+
+# Admin and system files (if any)
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
+# Temporary or backup files
+Disallow: /backup/
+Disallow: /tmp/
+
+# Email and contact scripts
+Disallow: /sendmail.php
+Disallow: /contact-form.php
+
+# Private or internal pages
+Disallow: /private/
+Disallow: /internal/
+
+# ================================================
+# CRAWL DELAY (Politeness)
+# ================================================
+
+# This tells search engine crawlers to wait between requests
+# to avoid overloading the server
+User-agent: *
+Crawl-delay: 5
+
+# ================================================
+# SPECIFIC SEARCH ENGINE DIRECTIVES
+# ================================================
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /backup/
+Disallow: /tmp/
+Crawl-delay: 2
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Crawl-delay: 2
+
+# Yahoo Slurp
+User-agent: Yahoo! Slurp
+Allow: /
+Crawl-delay: 5
+
+# Baidu Spider
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 10
+
+# Yandex Bot
+User-agent: Yandex
+Allow: /
+Crawl-delay: 5
+
+# ================================================
+# SITEMAP LOCATION
+# ================================================
+
+Sitemap: https://globalacademyeduresearch.com/sitemap.xml
+
+# ================================================
+# END OF robots.txt FILE
+# ================================================
