@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research & Innovations – Global Academy of Education Research</title>
+    <meta name="description" content="Explore the research and innovations of Global Academy of Education Research – the N-MELODY Framework, publications, conference presentations, and ongoing projects." />
+    <meta name="keywords" content="N-MELODY framework, ethnomathematics research, mathematics education publications, Dr. Kharika Parajuli, Springer book chapter, GeoGebra research" />
+    <meta name="author" content="Global Academy of Education Research Private Limited" />
+    <link rel="canonical" href="https://globalacademyeduresearch.com/research.html" />
+    <meta property="og:title" content="Research & Innovations – Global Academy of Education Research" />
+    <meta property="og:description" content="The N-MELODY Framework, publications, conferences, and ongoing research in mathematics education." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== COLOR VARIABLES ===== */
+        :root {
+            --primary: #0f2a47;
+            --primary-light: #1a3d66;
+            --gold: #f4a236;
+            --gold-dark: #d4892b;
+            --mint: #20b2aa;
+            --gray-bg: #f4f7fb;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.75rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--gold);
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            border-color: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(244, 162, 54, 0.35);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--primary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo h1 span {
+            color: var(--gold);
+        }
+        .logo .tagline {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: #b0c4de;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .nav-desktop ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-desktop a {
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-desktop a:hover,
+        .nav-desktop a.active {
+            color: var(--gold);
+        }
+        .nav-desktop .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-desktop .lang-btn:hover {
+            background: var(--gold);
+            color: var(--primary);
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+        .hamburger.open {
+            transform: rotate(90deg);
+        }
+        .mobile-lang {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            .logo .tagline {
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Mobile Slide Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            top: 72px;
+            height: calc(100vh - 72px);
+        }
+        .mobile-menu a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 60px;
+                height: calc(100vh - 60px);
+            }
+        }
+
+        /* ===== PAGE HERO (Inner) ===== */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3d66 60%, #2b4d7a 100%);
+            color: #fff;
+            padding: 3.5rem 0;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .page-hero h1 span {
+            color: var(--gold);
+        }
+        .page-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 2.5rem 0;
+            }
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .section-title p {
+            color: var(--text-light);
+            max-width: 660px;
+            margin: 0 auto;
+        }
+        .section-title .accent-line {
+            width: 60px;
+            height: 4px;
+            background: var(--gold);
+            margin: 0.6rem auto 0 auto;
+            border-radius: 4px;
+        }
+
+        /* ===== N-MELODY SECTION ===== */
+        .nmelody-section {
+            padding: 4rem 0;
+            background: var(--gray-bg);
+        }
+        .nmelody-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .nmelody-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            border-top: 5px solid var(--gold);
+        }
+        .nmelody-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+        .nmelody-card h3 span {
+            color: var(--gold);
+        }
+        .nmelody-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        .nmelody-card .badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.5rem;
+        }
+        .nmelody-acronym {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem 2rem;
+            margin-top: 1rem;
+        }
+        .nmelody-acronym-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.3rem;
+            font-size: 0.95rem;
+        }
+        .nmelody-acronym-item .letter {
+            font-weight: 700;
+            color: var(--gold-dark);
+            font-size: 1.1rem;
+            min-width: 20px;
+        }
+        @media (max-width: 768px) {
+            .nmelody-grid {
+                grid-template-columns: 1fr;
+            }
+            .nmelody-acronym {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== PUBLICATIONS ===== */
+        .publications-section {
+            padding: 4rem 0;
+        }
+        .pub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .pub-item {
+            background: var(--gray-bg);
+            padding: 1.2rem 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--gold);
+            transition: transform 0.2s;
+        }
+        .pub-item:hover {
+            transform: translateX(4px);
+        }
+        .pub-item .title {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .pub-item .journal {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .pub-item .year {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.1rem 0.8rem;
+            border-radius: 30px;
+            margin-top: 0.3rem;
+        }
+        @media (max-width: 768px) {
+            .pub-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== CONFERENCES ===== */
+        .conferences-section {
+            background: var(--gray-bg);
+            padding: 4rem 0;
+        }
+        .conf-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .conf-item {
+            background: #fff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border-bottom: 3px solid var(--gold);
+        }
+        .conf-item .conf-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .conf-item .conf-detail {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .conf-item .conf-topic {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--text-dark);
+            margin-top: 0.2rem;
+        }
+        @media (max-width: 768px) {
+            .conf-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== ONGOING PROJECTS ===== */
+        .projects-section {
+            padding: 4rem 0;
+        }
+        .project-card {
+            background: var(--gray-bg);
+            padding: 1.8rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--gold);
+        }
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+        .project-card h4 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .project-card p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            padding: 3rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-banner h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .cta-banner p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1.2rem;
+        }
+        .cta-banner .btn-primary {
+            background: #fff;
+            color: var(--primary);
+            border-color: #fff;
+        }
+        .cta-banner .btn-primary:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: #b0c4de;
+            padding: 2.5rem 0 1.5rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.95rem;
+            color: #b0c4de;
+            line-height: 1.8;
+        }
+        .footer-grid a:hover {
+            color: var(--gold);
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid ul li {
+            padding: 0.2rem 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a9db0;
+        }
+        .footer-bottom a {
+            color: var(--gold);
+            margin: 0 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cookie-inner p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex: 1;
+            color: #e2e8f0;
+        }
+        .cookie-inner a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-inner .btn-cookie {
+            background: var(--gold);
+            border: none;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .cookie-inner .btn-cookie:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 600px) {
+            .cookie-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <!-- Desktop Nav -->
+            <div class="logo">
+                <h1>Global Academy <span>of Education Research</span></h1>
+                <div class="tagline">Mathematics Education · Research · Training · Consultancy</div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="lang-btn" id="langToggleDesktop">ने</button></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo">
+                    <h1>Global Academy <span>of Ed. Research</span></h1>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <button class="mobile-lang" id="langToggleMobile">ने</button>
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container" id="heroEn">
+            <h1>Research <span>&amp; Innovations</span></h1>
+            <p>Exploring the intersection of ethnomathematics, ethnomodelling, Vedic mathematics, and technology‑integrated pedagogy to transform mathematics education.</p>
+        </div>
+        <div class="container" id="heroNp" style="display:none;">
+            <h1>अनुसन्धान <span>र नवप्रवर्तन</span></h1>
+            <p>गणित शिक्षा रूपान्तरण गर्न नृजातीय गणित, नृजातीय मोडेलिङ, वैदिक गणित र प्रविधि-एकीकृत शिक्षाशास्त्रको प्रतिच्छेदनको अन्वेषण।</p>
+        </div>
+    </section>
+
+    <!-- ===== N-MELODY FRAMEWORK ===== -->
+    <section class="nmelody-section">
+        <div class="container">
+            <div class="section-title" id="nmelodyTitleEn">
+                <h2>The N‑MELODY Framework</h2>
+                <p>A proprietary pedagogical model designed by Dr. Kharika Devi Parajuli for transformative mathematics education.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="nmelodyTitleNp" style="display:none;">
+                <h2>एन‑मेलोडी (N‑MELODY) ढाँचा</h2>
+                <p>रूपान्तरणकारी गणित शिक्षाका लागि डा. खरीका देवी पराजुलीद्वारा डिजाइन गरिएको एक स्वामित्वपूर्ण शैक्षिक मोडेल।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="nmelody-grid">
+                <div class="nmelody-card" id="nmelodyEn">
+                    <h3>What is <span>N‑MELODY</span>?</h3>
+                    <p>N‑MELODY is a pedagogical framework that integrates <strong>Critical Pedagogy, Reflective Practice, and Transformative Education</strong> to create socially just, culturally relevant, and deeply engaging mathematics learning experiences.</p>
+                    <p>It was developed through Dr. Parajuli's doctoral research and extensive classroom practice, bridging the gap between traditional cultural knowledge and modern educational theory.</p>
+                    <span class="badge">⭐ Signature Framework</span>
+
+                    <div class="nmelody-acronym">
+                        <div class="nmelody-acronym-item"><span class="letter">N</span> – Nepal / Numeracy / Nurturing</div>
+                        <div class="nmelody-acronym-item"><span class="letter">M</span> – Mathematics / Modelling</div>
+                        <div class="nmelody-acronym-item"><span class="letter">E</span> – Ethnomathematics / Engagement</div>
+                        <div class="nmelody-acronym-item"><span class="letter">L</span> – Learning / Local Knowledge</div>
+                        <div class="nmelody-acronym-item"><span class="letter">O</span> – Open Lab / Observation</div>
+                        <div class="nmelody-acronym-item"><span class="letter">D</span> – Development / Diversity</div>
+                        <div class="nmelody-acronym-item"><span class="letter">Y</span> – Yoga (Harmony) / Youth</div>
+                    </div>
+                </div>
+                <div class="nmelody-card" id="nmelodyNp" style="display:none;">
+                    <h3><span>N‑MELODY</span> के हो?</h3>
+                    <p>N‑MELODY एउटा शैक्षिक ढाँचा हो जसले <strong>आलोचनात्मक शिक्षाशास्त्र, चिन्तनशील अभ्यास र रूपान्तरणकारी शिक्षा</strong>लाई एकीकृत गर्दछ, जसले सामाजिक रूपमा न्यायसंगत, सांस्कृतिक रूपमा सान्दर्भिक र गहन रूपमा संलग्न गणित सिकाइ अनुभवहरू सिर्जना गर्दछ।</p>
+                    <p>यो डा. पराजुलीको डाक्टरेट अनुसन्धान र व्यापक कक्षा अभ्यास मार्फत विकसित गरिएको हो, जसले परम्परागत सांस्कृतिक ज्ञान र आधुनिक शैक्षिक सिद्धान्तबीचको सेतुको रूपमा काम गर्दछ।</p>
+                    <span class="badge">⭐ स्वामित्वपूर्ण ढाँचा</span>
+
+                    <div class="nmelody-acronym">
+                        <div class="nmelody-acronym-item"><span class="letter">N</span> – नेपाल / न्युमेरसी / पोषण</div>
+                        <div class="nmelody-acronym-item"><span class="letter">M</span> – गणित / मोडेलिङ</div>
+                        <div class="nmelody-acronym-item"><span class="letter">E</span> – नृजातीय गणित / संलग्नता</div>
+                        <div class="nmelody-acronym-item"><span class="letter">L</span> – सिकाइ / स्थानीय ज्ञान</div>
+                        <div class="nmelody-acronym-item"><span class="letter">O</span> – खुला प्रयोगशाला / अवलोकन</div>
+                        <div class="nmelody-acronym-item"><span class="letter">D</span> – विकास / विविधता</div>
+                        <div class="nmelody-acronym-item"><span class="letter">Y</span> – योग (सद्भाव) / युवा</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PUBLICATIONS ===== -->
+    <section class="publications-section">
+        <div class="container">
+            <div class="section-title" id="pubsTitleEn">
+                <h2>Selected Publications</h2>
+                <p>Peer‑reviewed journal articles, book chapters, and scholarly contributions.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="pubsTitleNp" style="display:none;">
+                <h2>चयनित प्रकाशनहरू</h2>
+                <p>समीक्षक-समीक्षित जर्नल लेखहरू, पुस्तक अध्यायहरू र विद्वत्तापूर्ण योगदानहरू।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="pub-grid" id="pubsEn">
+                <div class="pub-item"><span class="title">Learning mathematics through open lab: Pedagogical action and social justice</span><br><span class="journal">Springer Book Chapter (2025)</span><br><span class="year">Book Chapter</span></div>
+                <div class="pub-item"><span class="title">Integration of GeoGebra‑Designed Models in Constructivist Teaching and Learning Geometry</span><br><span class="journal">The Educator Journal, 12(1), 98–116 (2024)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">Mathematical Knowledge on Changu Narayan Temples’ Arts and Architectures: Ethnomathematics Perspective</span><br><span class="journal">Indonesian Journal of Ethnomathematics, 2(1), 21–36 (2023)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">Reciprocal Learning Mathematics through Honeycomb Patterns</span><br><span class="journal">JMC Research Journal, 12(1), 86–103 (2023)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">Problem of Migrate Children in the Mathematics Classroom</span><br><span class="journal">Journal of Mathematics Education, 5(1), 75–86 (2023)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">Ethnomathematics Exploration in the Rekhi of Mandap and Havankunda</span><br><span class="journal">Indonesian Journal of Ethnomathematics, 1(2), 105–116 (2022)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">Challenges Encountered by Mathematics Teachers in ICTs Implementation</span><br><span class="journal">JMC Research Journal, 10(01), 34–53 (2021)</span><br><span class="year">Journal</span></div>
+                <div class="pub-item"><span class="title">ICT Integrated Classroom Practices: Experiences of Secondary Level Mathematics Teacher</span><br><span class="journal">SATYEM, RPM‑Nepal (2021)</span><br><span class="year">Journal</span></div>
+            </div>
+            <div class="pub-grid" id="pubsNp" style="display:none;">
+                <div class="pub-item"><span class="title">Learning mathematics through open lab: Pedagogical action and social justice</span><br><span class="journal">Springer पुस्तक अध्याय (२०२५)</span><br><span class="year">पुस्तक अध्याय</span></div>
+                <div class="pub-item"><span class="title">Integration of GeoGebra‑Designed Models in Constructivist Teaching and Learning Geometry</span><br><span class="journal">The Educator Journal, १२(१), ९८–११६ (२०२४)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">Mathematical Knowledge on Changu Narayan Temples’ Arts and Architectures</span><br><span class="journal">Indonesian Journal of Ethnomathematics, २(१), २१–३६ (२०२३)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">Reciprocal Learning Mathematics through Honeycomb Patterns</span><br><span class="journal">JMC Research Journal, १२(१), ८६–१०३ (२०२३)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">Problem of Migrate Children in the Mathematics Classroom</span><br><span class="journal">Journal of Mathematics Education, ५(१), ७५–८६ (२०२३)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">Ethnomathematics Exploration in the Rekhi of Mandap and Havankunda</span><br><span class="journal">Indonesian Journal of Ethnomathematics, १(२), १०५–११६ (२०२२)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">Challenges Encountered by Mathematics Teachers in ICTs Implementation</span><br><span class="journal">JMC Research Journal, १०(०१), ३४–५३ (२०२१)</span><br><span class="year">जर्नल</span></div>
+                <div class="pub-item"><span class="title">ICT Integrated Classroom Practices: Experiences of Secondary Level Mathematics Teacher</span><br><span class="journal">SATYEM, RPM‑नेपाल (२०२१)</span><br><span class="year">जर्नल</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONFERENCE PRESENTATIONS ===== -->
+    <section class="conferences-section">
+        <div class="container">
+            <div class="section-title" id="confTitleEn">
+                <h2>Conference Presentations</h2>
+                <p>Selected presentations at national and international academic forums.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="confTitleNp" style="display:none;">
+                <h2>सम्मेलन प्रस्तुतिहरू</h2>
+                <p>राष्ट्रिय र अन्तर्राष्ट्रिय शैक्षिक मञ्चहरूमा चयनित प्रस्तुतिहरू।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="conf-grid" id="confEn">
+                <div class="conf-item">
+                    <div class="conf-name">ICEm‑7 – 7th International Conference on Ethnomathematics</div>
+                    <div class="conf-detail">Philippines (Dec 2022)</div>
+                    <div class="conf-topic">"School Geometry in the Rekhi of Mandap and Havankunda: An Ethnography from Hindu Rites and Rituals"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">AMNS‑2023 – 3rd International Conference on Applications of Mathematics to Nonlinear Sciences</div>
+                    <div class="conf-detail">Pokhara, Nepal (May 2023)</div>
+                    <div class="conf-topic">"Learning School Geometry Through the Rekhis of Brahmin Cultural"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">WoNiMS Annual Conference (WAC‑2023)</div>
+                    <div class="conf-detail">Kathmandu, Nepal (Nov 2023) — <strong>Session Chair</strong></div>
+                    <div class="conf-topic">"Empowering Students in Mathematics Learning Through Ethnomodelling"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">IWM Annual Conference – Indian Women and Mathematics</div>
+                    <div class="conf-detail">BITS Pilani, Goa, India (July 2024)</div>
+                    <div class="conf-topic">"Mathematics Practices Through Ethnomodelling on Nepali Dhaka Industries Patterns" (Poster)</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">SHAF‑2025 – Shaping Future: Trends in Education, Society, and Business</div>
+                    <div class="conf-detail">Mid‑West University, Surkhet (April 2025)</div>
+                    <div class="conf-topic">"Pedagogical Decolonization of Mathematics Teaching Through Nepali Artifacts"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">National Conference on Teacher Education‑2025</div>
+                    <div class="conf-detail">Prithivi Narayan Campus, Pokhara (May 2025)</div>
+                    <div class="conf-topic">"De‑stepping Constructivism, Re‑constructivism, and De‑constructivism in Mathematics Learning"</div>
+                </div>
+            </div>
+            <div class="conf-grid" id="confNp" style="display:none;">
+                <div class="conf-item">
+                    <div class="conf-name">ICEm‑७ – ७औं अन्तर्राष्ट्रिय नृजातीय गणित सम्मेलन</div>
+                    <div class="conf-detail">फिलिपिन्स (डिसेम्बर २०२२)</div>
+                    <div class="conf-topic">"School Geometry in the Rekhi of Mandap and Havankunda: An Ethnography from Hindu Rites and Rituals"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">AMNS‑२०२३ – ३औं अन्तर्राष्ट्रिय सम्मेलन</div>
+                    <div class="conf-detail">पोखरा, नेपाल (मे २०२३)</div>
+                    <div class="conf-topic">"Learning School Geometry Through the Rekhis of Brahmin Cultural"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">WoNiMS वार्षिक सम्मेलन (WAC‑२०२३)</div>
+                    <div class="conf-detail">काठमाडौं, नेपाल (नोभेम्बर २०२३) — <strong>अध्यक्ष</strong></div>
+                    <div class="conf-topic">"Empowering Students in Mathematics Learning Through Ethnomodelling"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">IWM वार्षिक सम्मेलन – Indian Women and Mathematics</div>
+                    <div class="conf-detail">BITS Pilani, गोवा, भारत (जुलाई २०२४)</div>
+                    <div class="conf-topic">"Mathematics Practices Through Ethnomodelling on Nepali Dhaka Industries Patterns" (पोस्टर)</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">SHAF‑२०२५ – Shaping Future: Trends in Education, Society, and Business</div>
+                    <div class="conf-detail">मध्य-पश्चिम विश्वविद्यालय, सुर्खेत (अप्रिल २०२५)</div>
+                    <div class="conf-topic">"Pedagogical Decolonization of Mathematics Teaching Through Nepali Artifacts"</div>
+                </div>
+                <div class="conf-item">
+                    <div class="conf-name">शिक्षक शिक्षा राष्ट्रिय सम्मेलन‑२०२५</div>
+                    <div class="conf-detail">पृथ्वी नारायण क्याम्पस, पोखरा (मे २०२५)</div>
+                    <div class="conf-topic">"De‑stepping Constructivism, Re‑constructivism, and De‑constructivism in Mathematics Learning"</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ONGOING PROJECTS ===== -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-title" id="projectsTitleEn">
+                <h2>Ongoing Research Projects</h2>
+                <p>Current initiatives advancing mathematics education through cultural integration and innovative pedagogy.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="projectsTitleNp" style="display:none;">
+                <h2>चालू अनुसन्धान परियोजनाहरू</h2>
+                <p>सांस्कृतिक एकीकरण र नवीन शिक्षाशास्त्र मार्फत गणित शिक्षा अगाडि बढाउने हालका पहलहरू।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div id="projectsEn">
+                <div class="project-card">
+                    <h4>🧩 STEAM Education through Hindu Cultural Rituals</h4>
+                    <p>Exploring the integration of Chaurasi Pooja and other rituals into interdisciplinary STEAM learning, connecting cultural practices with mathematics, science, and the arts.</p>
+                </div>
+                <div class="project-card">
+                    <h4>🧵 Ethnomodelling of Nepali Handicrafts</h4>
+                    <p>Developing mathematical models based on Dhaka patterns, honeycomb structures, and traditional artifacts to create culturally grounded learning resources for schools.</p>
+                </div>
+                <div class="project-card">
+                    <h4>📐 ICT‑Integrated Culturally Responsive Pedagogy</h4>
+                    <p>Designing GeoGebra‑based learning modules that incorporate indigenous knowledge systems, making mathematics accessible and engaging through technology.</p>
+                </div>
+                <div class="project-card">
+                    <h4>📖 Connecting Vedic, Ethno, and School Mathematics</h4>
+                    <p>Ongoing research and curriculum development based on Dr. Parajuli’s doctoral work, creating practical classroom resources that bridge traditional and formal mathematics.</p>
+                </div>
+            </div>
+            <div id="projectsNp" style="display:none;">
+                <div class="project-card">
+                    <h4>🧩 हिन्दू सांस्कृतिक अनुष्ठानहरू मार्फत STEAM शिक्षा</h4>
+                    <p>चौरासी पूजा र अन्य अनुष्ठानहरूलाई अन्तरविषयक STEAM सिकाइमा एकीकृत गर्ने, सांस्कृतिक अभ्यासहरूलाई गणित, विज्ञान र कलासँग जोड्ने।</p>
+                </div>
+                <div class="project-card">
+                    <h4>🧵 नेपाली हस्तकलाहरूको नृजातीय मोडेलिङ</h4>
+                    <p>ढाका ढाँचाहरू, महको छाका ढाँचाहरू र परम्परागत कलाकृतिहरूमा आधारित गणितीय मोडेलहरू विकास गर्ने।</p>
+                </div>
+                <div class="project-card">
+                    <h4>📐 ICT‑एकीकृत सांस्कृतिक-उत्तरदायी शिक्षाशास्त्र</h4>
+                    <p>आदिवासी ज्ञान प्रणालीहरू समावेश गर्ने GeoGebra-आधारित सिकाइ मोड्युलहरू डिजाइन गर्ने।</p>
+                </div>
+                <div class="project-card">
+                    <h4>📖 वैदिक, नृजातीय र स्कूल गणित जोड्दै</h4>
+                    <p>डा. पराजुलीको डाक्टरेट कार्यमा आधारित निरन्तर अनुसन्धान र पाठ्यक्रम विकास।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="ctaEn">
+        <div class="container">
+            <h2>Interested in Our Research?</h2>
+            <p>Let’s collaborate on research projects, publications, or joint conference initiatives.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+    <section class="cta-banner" id="ctaNp" style="display:none;">
+        <div class="container">
+            <h2>हाम्रो अनुसन्धानमा रुचि छ?</h2>
+            <p>अनुसन्धान परियोजनाहरू, प्रकाशनहरू वा संयुक्त सम्मेलन पहलहरूमा सहकार्य गरौं।</p>
+            <a href="contact.html" class="btn-primary">सम्पर्क गर्नुहोस्</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Global Academy of Education Research</h4>
+                    <p>Advancing mathematics education through research, innovation, and culturally responsive pedagogy. Founded by Dr. Kharika Devi Parajuli.</p>
+                    <p style="margin-top:0.6rem;"><strong>📍</strong> Pokhara-30, Dhungepatan, Kaski, Nepal</p>
+                    <p><strong>📧</strong> kharikaparajuli@gmail.com</p>
+                    <p><strong>📞</strong> +977-9846650159</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Global Academy of Education Research Private Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <p>We use cookies to remember your language preference and improve your experience. By continuing, you consent to our <a href="cookie.html">Cookie Policy</a>.</p>
+            <button class="btn-cookie" id="acceptCookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ----- LANGUAGE TOGGLE -----
+        let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+
+            document.querySelectorAll('[id$="En"]').forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+            document.querySelectorAll('[id$="Np"]').forEach(el => el.style.display = (lang === 'ne') ? '' : 'none');
+
+            document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+                btn.textContent = (lang === 'en') ? 'ने' : 'E';
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        function toggleLang() {
+            setLanguage(currentLang === 'en' ? 'ne' : 'en');
+        }
+
+        setLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+            btn.addEventListener('click', toggleLang);
+        });
+
+        // ----- MOBILE MENU -----
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            hamburger.classList.toggle('open', menuOpen);
+            hamburger.textContent = menuOpen ? '✕' : '☰';
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.textContent = '☰';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ----- COOKIE CONSENT -----
+        (function() {
+            const consent = localStorage.getItem('cookieConsent');
+            const banner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookie');
+
+            if (!consent) {
+                setTimeout(() => banner.classList.add('show'), 400);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.classList.remove('show');
+            });
+        })();
+    </script>
+
+</body>
+</html>
