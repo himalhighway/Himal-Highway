@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Academy of Education Research – Mathematics Education Research, Training &amp; Consultancy</title>
+    <meta name="description" content="Global Academy of Education Research provides research, teacher training, consultancy, and conferences in mathematics education, ethnomathematics, and culturally responsive pedagogy. Led by Dr. Kharika Devi Parajuli." />
+    <meta name="keywords" content="mathematics education research, teacher training Nepal, ethnomathematics, ethnomodelling, educational consultancy, curriculum development, STEM education, GeoGebra, Dr. Kharika Parajuli" />
+    <meta name="author" content="Global Academy of Education Research Private Limited" />
+    <link rel="canonical" href="https://globalacademyeduresearch.com/" />
+    <meta property="og:title" content="Global Academy of Education Research – Mathematics Education Research &amp; Training" />
+    <meta property="og:description" content="Advancing mathematics education through research, teacher training, and culturally responsive pedagogy." />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #ffffff;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== COLOR VARIABLES ===== */
+        :root {
+            --primary: #0f2a47;
+            --primary-light: #1a3d66;
+            --gold: #f4a236;
+            --gold-dark: #d4892b;
+            --mint: #20b2aa;
+            --gray-bg: #f4f7fb;
+            --text-dark: #1a202c;
+            --text-light: #4a5568;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.75rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--gold);
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background: var(--gold-dark);
+            border-color: var(--gold-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(244, 162, 54, 0.35);
+        }
+        .btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            padding: 0.75rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid #fff;
+            transition: all 0.25s;
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: var(--primary);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo h1 span {
+            color: var(--gold);
+        }
+        .logo .tagline {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: #b0c4de;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .nav-desktop ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-desktop a {
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-desktop a:hover {
+            color: var(--gold);
+        }
+        .nav-desktop .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .nav-desktop .lang-btn:hover {
+            background: var(--gold);
+            color: var(--primary);
+        }
+
+        /* Mobile Header */
+        .mobile-header {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 4px;
+        }
+        .hamburger.open {
+            transform: rotate(90deg);
+        }
+        .mobile-lang {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            .mobile-header {
+                display: flex;
+            }
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            .logo .tagline {
+                font-size: 0.55rem;
+            }
+        }
+
+        /* Mobile Slide Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: var(--primary);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            top: 72px;
+            height: calc(100vh - 72px);
+        }
+        .mobile-menu a {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+        .mobile-menu.open {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                top: 60px;
+                height: calc(100vh - 60px);
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3d66 60%, #2b4d7a 100%);
+            color: #fff;
+            padding: 5rem 0 4.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 300px;
+            height: 300px;
+            background: rgba(244, 162, 54, 0.08);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            width: 400px;
+            height: 400px;
+            background: rgba(32, 178, 170, 0.06);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+        .hero-content h1 span {
+            color: var(--gold);
+        }
+        .hero-content p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            margin-bottom: 1.8rem;
+            max-width: 540px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            padding: 2rem 1.8rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-stats .stat {
+            text-align: center;
+        }
+        .hero-stats .stat-number {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: block;
+        }
+        .hero-stats .stat-label {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-content p {
+                max-width: 100%;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 576px) {
+            .hero {
+                padding: 3rem 0 2.5rem 0;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                padding: 1.5rem 1rem;
+            }
+            .hero-stats .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .section-title p {
+            color: var(--text-light);
+            max-width: 660px;
+            margin: 0 auto;
+        }
+        .section-title .accent-line {
+            width: 60px;
+            height: 4px;
+            background: var(--gold);
+            margin: 0.6rem auto 0 auto;
+            border-radius: 4px;
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            padding: 4rem 0 3.5rem 0;
+            background: var(--gray-bg);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: #fff;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            transition: all 0.25s;
+            border-bottom: 4px solid transparent;
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+            border-bottom-color: var(--gold);
+        }
+        .service-card .icon {
+            font-size: 2.8rem;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        /* ===== ABOUT / FOUNDER ===== */
+        .about-section {
+            padding: 4rem 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-text h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .about-text h2 span {
+            color: var(--gold);
+        }
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        .about-text .highlight-list {
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+        .about-text .highlight-list li {
+            padding: 0.4rem 0;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        .about-text .highlight-list li::before {
+            content: '✓ ';
+            color: var(--mint);
+            font-weight: 700;
+        }
+        .about-founder {
+            background: var(--gray-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 6px solid var(--gold);
+        }
+        .about-founder .avatar {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+        .about-founder h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+        .about-founder .title {
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-founder p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-text h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* ===== PUBLICATIONS / N-MELODY ===== */
+        .research-highlight {
+            padding: 4rem 0;
+            background: var(--primary);
+            color: #fff;
+        }
+        .research-highlight .section-title h2 {
+            color: #fff;
+        }
+        .research-highlight .section-title p {
+            color: #b0c4de;
+        }
+        .research-highlight .section-title .accent-line {
+            background: var(--gold);
+        }
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(4px);
+            padding: 1.8rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: 0.2s;
+        }
+        .highlight-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .highlight-card h3 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .highlight-card p,
+        .highlight-card li {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        .highlight-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .highlight-card ul li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .highlight-card ul li:last-child {
+            border-bottom: none;
+        }
+        .highlight-card .badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            padding: 3rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-banner h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .cta-banner p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1.2rem;
+        }
+        .cta-banner .btn-primary {
+            background: #fff;
+            color: var(--primary);
+            border-color: #fff;
+        }
+        .cta-banner .btn-primary:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: #b0c4de;
+            padding: 2.5rem 0 1.5rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+        .footer-grid p,
+        .footer-grid a {
+            font-size: 0.95rem;
+            color: #b0c4de;
+            line-height: 1.8;
+        }
+        .footer-grid a:hover {
+            color: var(--gold);
+        }
+        .footer-grid ul {
+            list-style: none;
+        }
+        .footer-grid ul li {
+            padding: 0.2rem 0;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a9db0;
+        }
+        .footer-bottom a {
+            color: var(--gold);
+            margin: 0 0.6rem;
+        }
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* ===== COOKIE BANNER ===== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 0;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        .cookie-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cookie-inner p {
+            margin: 0;
+            font-size: 0.9rem;
+            flex: 1;
+            color: #e2e8f0;
+        }
+        .cookie-inner a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-inner .btn-cookie {
+            background: var(--gold);
+            border: none;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 0.4rem 1.6rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .cookie-inner .btn-cookie:hover {
+            background: var(--gold-dark);
+        }
+        @media (max-width: 600px) {
+            .cookie-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <!-- Desktop Nav -->
+            <div class="logo">
+                <h1>Global Academy <span>of Education Research</span></h1>
+                <div class="tagline">Mathematics Education · Research · Training · Consultancy</div>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="lang-btn" id="langToggleDesktop">ने</button></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo">
+                    <h1>Global Academy <span>of Ed. Research</span></h1>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <button class="mobile-lang" id="langToggleMobile">ने</button>
+                    <button class="hamburger" id="hamburgerBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" id="heroEn">
+                <h1>Advancing Mathematics Education Through <span>Research &amp; Innovation</span></h1>
+                <p>We bridge ethnomathematics, culturally responsive pedagogy, and technology to transform mathematics teaching and learning in Nepal and beyond.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn-primary">Explore Our Services</a>
+                    <a href="contact.html" class="btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-content" id="heroNp" style="display:none;">
+                <h1>अनुसन्धान र नवप्रवर्तन मार्फत <span>गणित शिक्षाको</span> उन्नति</h1>
+                <p>हामी नृजातीय गणित, सांस्कृतिक-उत्तरदायी शिक्षाशास्त्र र प्रविधिलाई जोडेर नेपाल र विश्वमा गणित शिक्षणलाई रूपान्तरित गर्दछौं।</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn-primary">हाम्रा सेवाहरू</a>
+                    <a href="contact.html" class="btn-outline">सम्पर्क गर्नुहोस्</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">24+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Teachers Trained</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Intl. Conferences</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title" id="servicesTitleEn">
+                <h2>Our Core Services</h2>
+                <p>Comprehensive solutions designed to advance mathematics education through research, training, and collaboration.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="servicesTitleNp" style="display:none;">
+                <h2>हाम्रा मूल सेवाहरू</h2>
+                <p>अनुसन्धान, तालिम र सहकार्य मार्फत गणित शिक्षाको उन्नतिका लागि व्यापक समाधानहरू।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="icon">🔬</span>
+                    <h3>Research &amp; Innovation</h3>
+                    <p>Ethnomathematics, ethnomodelling, action research, and technology-integrated pedagogical studies.</p>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🎓</span>
+                    <h3>Teacher Training</h3>
+                    <p>Professional development, ICT integration, GeoGebra workshops, and the N‑MELODY framework.</p>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🗣️</span>
+                    <h3>Conferences &amp; Events</h3>
+                    <p>National and international conferences, seminars, symposia, and academic talk series.</p>
+                </div>
+                <div class="service-card">
+                    <span class="icon">🤝</span>
+                    <h3>Consultancy &amp; Projects</h3>
+                    <p>Curriculum development, policy advisory, educational project management, and M&amp;E.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / FOUNDER ===== -->
+    <section class="about-section">
+        <div class="container about-grid">
+            <div class="about-text" id="aboutEn">
+                <h2>Meet Our Founder: <span>Dr. Kharika Devi Parajuli</span></h2>
+                <p>Dr. Parajuli is a highly accomplished mathematics teacher educator with over <strong>24 years</strong> of experience. She holds a Ph.D. in Mathematics Education from Tribhuvan University (2022) and an M.Phil. from Kathmandu University (2017).</p>
+                <p>Her doctoral research, <em>"Connecting Vedic, Ethno, and School Mathematics,"</em> explores how local cultural knowledge and artifacts can be transformed into powerful pedagogical designs. She has published extensively in national and international journals and contributed a chapter to a prestigious <strong>Springer</strong> book on ethnomathematics.</p>
+                <ul class="highlight-list">
+                    <li>Founder &amp; Director, Global Academy of Education Research</li>
+                    <li>Executive Member, Nepal Mathematical Society (Gandaki Province)</li>
+                    <li>Director, Centre for Innovation, Research, Development &amp; Training (CIRDT)</li>
+                    <li>Life Member, Women of Nepal in Mathematical Sciences (WoNiMS)</li>
+                </ul>
+            </div>
+            <div class="about-text" id="aboutNp" style="display:none;">
+                <h2>हाम्री संस्थापक: <span>डा. खरीका देवी पराजुली</span></h2>
+                <p>डा. पराजुली २४ वर्षभन्दा बढी अनुभव भएकी एक प्रख्यात गणित शिक्षक शिक्षिका हुनुहुन्छ। उहाँले त्रिभुवन विश्वविद्यालयबाट गणित शिक्षामा पीएच.डी. (२०२२) र काठमाडौं विश्वविद्यालयबाट एम.फिल. (२०१७) प्राप्त गर्नुभएको छ।</p>
+                <p>उहाँको अनुसन्धान <em>"Connecting Vedic, Ethno, and School Mathematics"</em> ले स्थानीय सांस्कृतिक ज्ञान र कलाकृतिहरूलाई शक्तिशाली शैक्षिक डिजाइनमा कसरी रूपान्तरण गर्न सकिन्छ भन्ने अन्वेषण गर्दछ। उहाँले राष्ट्रिय र अन्तर्राष्ट्रिय जर्नलहरूमा व्यापक रूपमा प्रकाशित गर्नुभएको छ र एथनोम्याथमेटिक्समा <strong>Springer</strong> पुस्तकमा अध्याय योगदान गर्नुभएको छ।</p>
+                <ul class="highlight-list">
+                    <li>संस्थापक तथा निर्देशक, ग्लोबल एकेडेमी अफ एजुकेसन रिसर्च</li>
+                    <li>कार्यकारी सदस्य, नेपाल गणित समाज (गण्डकी प्रदेश)</li>
+                    <li>निर्देशक, सेन्टर फर इनोभेसन, रिसर्च, डेभलपमेन्ट एण्ड ट्रेनिङ (CIRDT)</li>
+                    <li>आजीवन सदस्य, Women of Nepal in Mathematical Sciences (WoNiMS)</li>
+                </ul>
+            </div>
+
+            <div class="about-founder" id="founderEn">
+                <div class="avatar">👩‍🏫</div>
+                <h3>Dr. Kharika Devi Parajuli</h3>
+                <div class="title">Ph.D. (Mathematics Education) · Founder &amp; Director</div>
+                <p>With a unique integration of deep theoretical knowledge, innovative teacher-education practices, and practical classroom expertise, Dr. Parajuli leads the Academy's vision to make mathematics accessible, culturally relevant, and socially just for all learners.</p>
+                <p style="margin-top:0.6rem;"><strong>📧</strong> kharikaparajuli@gmail.com &nbsp;|&nbsp; <strong>📞</strong> +977-9846650159</p>
+            </div>
+            <div class="about-founder" id="founderNp" style="display:none;">
+                <div class="avatar">👩‍🏫</div>
+                <h3>डा. खरीका देवी पराजुली</h3>
+                <div class="title">पीएच.डी. (गणित शिक्षा) · संस्थापक तथा निर्देशक</div>
+                <p>गहन सैद्धान्तिक ज्ञान, नवीन शिक्षक-शिक्षण अभ्यास र व्यावहारिक कक्षा-विशेषज्ञताको अद्वितीय एकीकरणका साथ, डा. पराजुलीले गणितलाई सबै शिक्षार्थीहरूका लागि सुलभ, सांस्कृतिक रूपमा सान्दर्भिक र सामाजिक रूपमा न्यायसंगत बनाउने एकेडेमीको दृष्टिकोणको नेतृत्व गर्नुहुन्छ।</p>
+                <p style="margin-top:0.6rem;"><strong>📧</strong> kharikaparajuli@gmail.com &nbsp;|&nbsp; <strong>📞</strong> +977-9846650159</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH HIGHLIGHT (N-MELODY & PUBLICATIONS) ===== -->
+    <section class="research-highlight">
+        <div class="container">
+            <div class="section-title" id="researchTitleEn">
+                <h2>Research &amp; Innovations</h2>
+                <p>Our signature frameworks, publications, and ongoing projects.</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="section-title" id="researchTitleNp" style="display:none;">
+                <h2>अनुसन्धान र नवप्रवर्तन</h2>
+                <p>हाम्रा स्वामित्वपूर्ण ढाँचाहरू, प्रकाशनहरू र चालू परियोजनाहरू।</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="highlight-grid">
+                <div class="highlight-card" id="researchEn">
+                    <h3>🧩 The N‑MELODY Framework</h3>
+                    <p>A proprietary pedagogical model developed by Dr. Parajuli that integrates <strong>Critical Pedagogy, Reflective Practice, and Transformative Education</strong> to create socially just, culturally relevant, and deeply engaging mathematics learning experiences.</p>
+                    <ul>
+                        <li><strong>N</strong> – Nepal / Numeracy / Nurturing</li>
+                        <li><strong>M</strong> – Mathematics / Modelling</li>
+                        <li><strong>E</strong> – Ethnomathematics / Engagement</li>
+                        <li><strong>L</strong> – Learning / Local Knowledge</li>
+                        <li><strong>O</strong> – Open Lab / Observation</li>
+                        <li><strong>D</strong> – Development / Diversity</li>
+                        <li><strong>Y</strong> – Yoga (Harmony) / Youth</li>
+                    </ul>
+                    <span class="badge">Signature Framework</span>
+                </div>
+                <div class="highlight-card" id="researchNp" style="display:none;">
+                    <h3>🧩 एन‑मेलोडी (N‑MELODY) ढाँचा</h3>
+                    <p>डा. पराजुलीद्वारा विकसित एक स्वामित्वपूर्ण शैक्षिक मोडेल जसले <strong>आलोचनात्मक शिक्षाशास्त्र, चिन्तनशील अभ्यास र रूपान्तरणकारी शिक्षा</strong>लाई एकीकृत गर्दछ।</p>
+                    <ul>
+                        <li><strong>N</strong> – नेपाल / न्युमेरसी / पोषण</li>
+                        <li><strong>M</strong> – गणित / मोडेलिङ</li>
+                        <li><strong>E</strong> – नृजातीय गणित / संलग्नता</li>
+                        <li><strong>L</strong> – सिकाइ / स्थानीय ज्ञान</li>
+                        <li><strong>O</strong> – खुला प्रयोगशाला / अवलोकन</li>
+                        <li><strong>D</strong> – विकास / विविधता</li>
+                        <li><strong>Y</strong> – योग (सद्भाव) / युवा</li>
+                    </ul>
+                    <span class="badge">स्वामित्वपूर्ण ढाँचा</span>
+                </div>
+
+                <div class="highlight-card" id="pubsEn">
+                    <h3>📄 Recent Publications</h3>
+                    <ul>
+                        <li><strong>2025</strong> – <em>Learning mathematics through open lab</em> (Springer Book Chapter)</li>
+                        <li><strong>2024</strong> – <em>Integration of GeoGebra-Designed Models</em> (The Educator Journal)</li>
+                        <li><strong>2023</strong> – <em>Mathematical Knowledge on Changu Narayan Temples</em> (Indonesian Journal of Ethnomathematics)</li>
+                        <li><strong>2023</strong> – <em>Problem of Migrate Children in the Mathematics Classroom</em> (Journal of Mathematics Education)</li>
+                    </ul>
+                    <span class="badge">Peer-Reviewed</span>
+                </div>
+                <div class="highlight-card" id="pubsNp" style="display:none;">
+                    <h3>📄 हालैका प्रकाशनहरू</h3>
+                    <ul>
+                        <li><strong>२०२५</strong> – <em>Learning mathematics through open lab</em> (Springer पुस्तक अध्याय)</li>
+                        <li><strong>२०२४</strong> – <em>Integration of GeoGebra-Designed Models</em> (The Educator Journal)</li>
+                        <li><strong>२०२३</strong> – <em>Mathematical Knowledge on Changu Narayan Temples</em> (Indonesian Journal of Ethnomathematics)</li>
+                        <li><strong>२०२३</strong> – <em>Problem of Migrate Children in the Mathematics Classroom</em> (Journal of Mathematics Education)</li>
+                    </ul>
+                    <span class="badge">समीक्षक-समीक्षित</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="ctaEn">
+        <div class="container">
+            <h2>Ready to Transform Mathematics Education?</h2>
+            <p>Partner with us for research, teacher training, or consultancy projects.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+    <section class="cta-banner" id="ctaNp" style="display:none;">
+        <div class="container">
+            <h2>गणित शिक्षा रूपान्तरण गर्न तयार हुनुहुन्छ?</h2>
+            <p>अनुसन्धान, शिक्षक तालिम वा परामर्श परियोजनाहरूको लागि हामीसँग साझेदारी गर्नुहोस्।</p>
+            <a href="contact.html" class="btn-primary">सम्पर्क गर्नुहोस्</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Global Academy of Education Research</h4>
+                    <p>Advancing mathematics education through research, innovation, and culturally responsive pedagogy. Founded by Dr. Kharika Devi Parajuli.</p>
+                    <p style="margin-top:0.6rem;"><strong>📍</strong> Pokhara-30, Dhungepatan, Kaski, Nepal</p>
+                    <p><strong>📧</strong> kharikaparajuli@gmail.com</p>
+                    <p><strong>📞</strong> +977-9846650159</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Global Academy of Education Research Private Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE CONSENT ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <p>We use cookies to remember your language preference and improve your experience. By continuing, you consent to our <a href="cookie.html">Cookie Policy</a>.</p>
+            <button class="btn-cookie" id="acceptCookie">Accept</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ----- LANGUAGE TOGGLE -----
+        let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+
+            // Toggle content blocks
+            document.querySelectorAll('[id$="En"]').forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+            document.querySelectorAll('[id$="Np"]').forEach(el => el.style.display = (lang === 'ne') ? '' : 'none');
+
+            // Toggle lang buttons text
+            document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+                btn.textContent = (lang === 'en') ? 'ने' : 'E';
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        function toggleLang() {
+            setLanguage(currentLang === 'en' ? 'ne' : 'en');
+        }
+
+        // Init language
+        setLanguage(currentLang);
+
+        document.querySelectorAll('.lang-btn, .mobile-lang').forEach(btn => {
+            btn.addEventListener('click', toggleLang);
+        });
+
+        // ----- MOBILE MENU -----
+        const hamburger = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            hamburger.classList.toggle('open', menuOpen);
+            hamburger.textContent = menuOpen ? '✕' : '☰';
+            document.body.style.overflow = menuOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.textContent = '☰';
+                document.body.style.overflow = '';
+            });
+        });
+
+        // ----- COOKIE CONSENT -----
+        (function() {
+            const consent = localStorage.getItem('cookieConsent');
+            const banner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookie');
+
+            if (!consent) {
+                setTimeout(() => banner.classList.add('show'), 400);
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                banner.classList.remove('show');
+            });
+        })();
+    </script>
+
+</body>
+</html>
