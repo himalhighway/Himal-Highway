@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- ===== MAIN PAGES ===== -->
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- About Us -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/about.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Services -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/services.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Research & Innovations -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/research.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/contact.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- ===== POLICY PAGES ===== -->
+    
+    <!-- Terms of Use -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/terms.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/privacy.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Cookie Policy -->
+    <url>
+        <loc>https://globalacademyeduresearch.com/cookie.html</loc>
+        <lastmod>2026-06-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>
