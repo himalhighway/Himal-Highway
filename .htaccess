@@ -1,0 +1,183 @@
+# ================================================
+# .htaccess for Global Academy of Education Research
+# Domain: https://globalacademyeduresearch.com
+# Last Updated: 18 June 2026
+# Server: Apache 2.4+
+# ================================================
+
+# ================================================
+# 1. URL REDIRECTION
+# ================================================
+
+# Force HTTPS (SSL) – Redirect all HTTP traffic to HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirect non-www to www (or vice versa) – Choose ONE:
+# Option A: Force www (uncomment below)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Option B: Force non-www (uncomment below) – RECOMMENDED for clean URLs
+# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ================================================
+# 2. SECURITY HEADERS
+# ================================================
+
+# Prevent MIME type sniffing (security)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ================================================
+# 3. DISABLE DIRECTORY BROWSING
+# ================================================
+
+# Prevent users from seeing folder contents
+Options -Indexes
+
+# ================================================
+# 4. PROTECT SENSITIVE FILES
+# ================================================
+
+# Prevent access to .htaccess, .htpasswd, .env, etc.
+<FilesMatch "^\.(htaccess|htpasswd|env|git|DS_Store)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to backup files and sensitive scripts
+<FilesMatch "\.(bak|sql|log|sh|inc|yml|json)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ================================================
+# 5. HIDE SERVER SIGNATURE
+# ================================================
+
+# Prevent exposing server version/OS to attackers
+ServerSignature Off
+ServerTokens Prod
+
+# ================================================
+# 6. BLOCK BAD BOTS AND SPAMMERS
+# ================================================
+
+# Block common spam and malicious crawlers
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} (ahrefs|MJ12bot|SemrushBot|DotBot|BLEXBot|DataForSeoBot|SEOkicks|SeznamBot|Screaming|proximic|rogerbot|scrapy|spbot|ltx71|PetalBot) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# ================================================
+# 7. PREVENT HOTLINKING (Image Theft)
+# ================================================
+
+# Block other websites from using your images directly
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{HTTP_REFERER} !^https://(www\.)?globalacademyeduresearch\.com/ [NC]
+    RewriteRule \.(jpg|jpeg|png|gif|webp|svg|ico)$ - [F,L]
+</IfModule>
+
+# ================================================
+# 8. BROWSER CACHING (Performance)
+# ================================================
+
+# Enable caching for static assets to speed up page loading
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Default expiration (1 week)
+    ExpiresDefault "access plus 1 week"
+    
+    # CSS and JavaScript (1 month)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # HTML (1 hour – ensure updates are seen quickly)
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # Images (1 year – far future)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/ico "access plus 1 year"
+    
+    # Fonts (1 year)
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    
+    # PDF files (1 month)
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# ================================================
+# 9. GZIP COMPRESSION (Performance)
+# ================================================
+
+# Compress text-based files to reduce page size and load time
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom+xml
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    
+    # Remove browser bugs (only needed for old IE)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# ================================================
+# 10. CUSTOM ERROR PAGES
+# ================================================
+
+# Uncomment these lines if you create custom error pages
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+# ErrorDocument 500 /500.html
+
+# ================================================
+# 11. DEFAULT CHARSET AND LANGUAGE
+# ================================================
+
+# Set default character set to UTF-8
+AddDefaultCharset UTF-8
+
+# Default language
+DefaultLanguage en-US
+
+# ================================================
+# 12. REDIRECT TO HOME PAGE (Optional)
+# ================================================
+
+# Redirect specific old/expired pages to home (if needed)
+# Redirect 301 /old-page.html /
+
+# ================================================
+# END OF .htaccess FILE
+# ================================================
